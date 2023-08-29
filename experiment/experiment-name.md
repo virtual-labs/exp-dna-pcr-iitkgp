@@ -1,1 +1,1 @@
-## Amplification of DNA sequence using Polymerase Chain Reaction (PCR)
+## DNA amplification by Polymerase Chain Reaction (PCR)

@@ -8,7 +8,7 @@
 <b>Discipline | <b>School of Bioscience
 :--|:--|
 <b> Lab | <b> Experimental Biochemistry
-<b> Experiment|     <b> Amplification of DNA sequence using Polymerase Chain Reaction (PCR) and experiment number 2
+<b> Experiment|     <b> DNA amplification by Polymerase Chain Reaction (PCR) and experiment number 2
 
 
 
