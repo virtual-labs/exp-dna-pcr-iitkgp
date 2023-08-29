@@ -1,5 +1,14 @@
 ## Procedure
 
+
+Steps | Action  | Procedure Details| 
+:--|:--|:--|
+<img src="images/Thawing_PCR.jpg" width="30%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
+<img src="images/PCR_tube.jpg" width="30%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
+<img src="images/Thermal_cycler.jpg" width="30%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
+<img src="images/Agarose_gel_visualization.jpg" width="40%"> | Visualization of the amplified PCR product using agarose gel  |  DNA gel loading dye is added to the PCR product and the sample is analyzed using gel electrophoresis. The PCR product can be used immediately or stored at   -20 ͦ C for further use |
+
+
 #### The basic steps of the PCR cycling reactions are:
 1. **Denaturation (94-96°C):** The denaturation step is carried out at the beginning of PCR and use high temperature to  separate the double-stranded template DNA into single strands by breaking the hydrogen bond between bases on complementary strands. The initial denaturation step is usually performed at 94–98°C for 1–3 minutes. The time and temperature of this step can differ depending on the nature of the template DNA and salt concentrations of buffer. 
 2. **Annealing (55- 65°C):** In this step, the PCR  reaction temperature is lowered to allow binding of the primers to the target DNA sequence of the template. Incubation time of 0.5–2 minutes is sufficient for primer annealing. The annealing temperature is determined by calculating the melting temperature (Tm) of the selected primers for PCR amplification.
@@ -10,3 +19,11 @@ PCR steps of denaturation, annealing, and extension are repeated many times to a
 If we are assuming that the efficiency of the PCR reaction is perfect, then there will be doubling of the template DNA at each cycle.  
 The final number of target DNA molecules is Y = X(2n) 
 where “X” is the number of  target DNA  at cycle one, “n” is the number of cycles, and “Y” is the final number of target molecules.
+
+<div><img src="images/PCR_cycle.jpg" width="30%">
+
+</div>
+
+<div><img src="images/PCR_amplification.jpg" width="30%">
+<p>Schematic representation of the PCR amplification reaction.</p>
+</div>
