@@ -1,5 +1,5 @@
 ## Introduction
-## Introduction
+
 
 <div align="center">
 <img src="experiment/images/iitkgp.png" width="10%">
@@ -10,10 +10,7 @@
 <b> Lab | <b> Experimental Biochemistry
 <b> Experiment|     <b> Amplification of DNA sequence using Polymerase Chain Reaction (PCR) and experiment number 2
 
-<b>Discipline | <b>Fill your discipline name here
-:--|:--|
-<b> Lab | <b> Fill your lab name here
-<b> Experiment|     <b> Fill your experiment name and number here
+
 
 ### About the Experiment 
 

@@ -3,10 +3,10 @@
 
 Steps | Action  | Procedure Details| 
 :--|:--|:--|
-<img src="images/Thawing_PCR.jpg" width="30%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
-<img src="images/PCR_tube.jpg" width="30%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
-<img src="images/Thermal_cycler.jpg" width="30%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
-<img src="images/Agarose_gel_visualization.jpg" width="40%"> | Visualization of the amplified PCR product using agarose gel  |  DNA gel loading dye is added to the PCR product and the sample is analyzed using gel electrophoresis. The PCR product can be used immediately or stored at   -20 ͦ C for further use |
+<img src="images/Thawing_PCR.jpg" width="50%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
+<img src="images/PCR_tube.jpg" width="50%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
+<img src="images/Thermal_cycler.jpg" width="50%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
+<img src="images/Agarose_gel_visualization.jpg" width="50%"> | Visualization of the amplified PCR product using agarose gel  |  DNA gel loading dye is added to the PCR product and the sample is analyzed using gel electrophoresis. The PCR product can be used immediately or stored at   -20 ͦ C for further use |
 
 
 #### The basic steps of the PCR cycling reactions are:
