@@ -1,1 +1,223 @@
 /* You CSS goes in here */
+
+.card{
+    margin-bottom: 5px;
+}
+
+.img-container{
+
+    display: inline-block;
+    position: relative;
+}
+
+#pcrmachine{
+    position: relative;
+    width:25%;
+    top:1%;
+    left:5%;
+}
+
+#pcrmachinecover{
+    position: absolute;
+    width:30%;
+    top:10%;
+    left:10%;
+    
+    /*transition: transform 2s ease-in-out;*/
+ 
+}
+
+
+.door
+{
+  background-color: transparent;
+  display:block;
+  width:70%;
+  height:130%;
+  
+  /*Speed of the Door animation*/
+  transition: all 0.7s ease-in-out;
+}
+.door1{
+    
+  transform-style: preserve-3d;
+  transition: transform 2s, box-shadow .5s;
+  transform-origin: left center; 
+  
+}
+
+
+  
+  .doorOpen1
+  {
+    transform: perspective(800px) rotateX(-105deg);
+    
+  }
+  
+
+
+#cellplate{
+    position: absolute;
+    width:10%;
+    top:15%;
+    left:12%; 
+}
+
+#tube{
+    position: absolute;
+    width:1.5%;
+    top:17%;
+    left:40%;  
+   
+}
+
+#back{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:6.5%; 
+}
+
+#inst{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:13%; 
+}
+
+#del{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:19.2%; 
+}
+
+#option{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:25.3%; 
+}
+
+#save{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:32%; 
+}
+
+#run{
+    position: absolute;
+    width:3.2%;
+    height:4%;
+    top:86.2%;
+    left:21.2%; 
+    background-color: transparent;
+}
+
+#dnastrandsa{
+    position: absolute;
+    width:35%;
+    top:31%; /* 35 */
+    left:60.1%;
+}
+
+#dnastrandsb{
+    position: absolute;
+    width:35%;
+    top:35%; /* 35 */
+    left:60%;
+   
+    
+}
+
+
+ 
+#dnaprimerb{ /*  up  */
+    position: absolute;
+    width:5.4%;
+    top:35%; /* 35 */
+    left:62.8%;
+   
+    
+}
+
+#dnaprimer{ /*  down  */
+    position: absolute;
+    width:5.4%;
+    top:40%; /* 40 */
+    left:62.9%;
+   
+    
+}
+
+#dnaprimerext{  /*  down  */
+    position: absolute;
+    width:35%;
+    top:47%; /* 30 */
+    left:60%;
+   
+    
+}
+
+#dnaprimerextb{  /*  up  */
+    position: absolute;
+    width:35%;
+    top:23%;  /* 35 */
+    left:60%;
+   
+    
+}
+
+
+
+
+#stepshead1{
+    position: absolute;
+    width:35%;
+    top:1%; /* 35 */
+    left:60.1%;
+}
+
+#stepshead{
+    position: absolute;
+    width:35%;
+    top:6%; /* 35 */
+    left:60.1%;
+}
+
+
+#den3min{
+    position: absolute;
+    width:2.5%;
+    height:21.1%;
+    top:62.4%;
+    left:5.9%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#ann2min{
+    position: absolute;
+    width:2.8%;
+    height:21.1%;
+    top:62.4%;
+    left:11%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#ext1min{
+    position: absolute;
+    width:2.8%;
+    height:21.1%;
+    top:62.4%;
+    left:13.8%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
