@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"></script-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="./css/main.css">
 </head>
-<body>
-		<!-- Your code goes here-->
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
+<body>
+	<div class="container-fluid p-2">
+		<div class="row">
+			<div class="col-md-2 text-center">
+				<button id="step0" type="button" class="btn border border-3 border-primary rounded-5 fs-5 "
+					onclick="start()" style="cursor: pointer; float:center">Start</button>
+			</div>
+			<div class="col-md-3">
+				<button id="step1" type="button" class="btn border border-3 border-primary rounded-5 fs-5"
+					onclick="thaw()" style="cursor: pointer; " disabled>Thawing the PCR reaction components on ice</button>
+			</div>
+			<div class="col-md-3 text-center">
+				<!--div class="d-flex gap-2 d-grid flex-row"-->
+
+				<button id="step2" type="button" class="btn border border-3 border-primary rounded-5 fs-5"
+					onclick="prepmix()" style="cursor: pointer;" disabled>Preparation of PCR mixture</button>
+
+				<!--/div-->
+			</div>
+			<div class="col-md-4">
+				<button id="step3" type="button" class="btn border border-3 border-primary rounded-5 fs-5 mb-2"
+					onclick="PCRincub()" style="cursor: pointer;" >Incubation of the PCR reaction mixture in a thermal
+					cycler</button>
+				<div class="d-flex d-grid gap-2 flex-row">
+					<button type="button" id="opentc"  class="open btn border border-3 border-primary rounded-5 fs-5"
+						onclick="openthermalcycle()" style="cursor: pointer;display: none;">Open</button>
+					<!--button type="button" id="closetc" class="btn border border-3 border-primary rounded-5 fs-5"
+						onclick="closethermalcycle()" style="cursor: pointer;display: none;">Close</button-->
+				</div>
+			</div>
+
+		</div>
+		<div class="row ">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5">Instructions</div>
+					<div class="card-body">
+						<ol>
+							<li>Click "Start" button. Then click on "Thawing" button.</li>
+							<li>Next click the "Preparation of PCR mixture" button to make the tube visible.</li>
+							<li>Click on "Incubation of the PCR reaction mixture in a thermal
+								cycler" button. Then click on "Open" button to open the thermal cycler. To placed the tube in the cell plate, click on the tube. After tube is placed in the cell plate, click on "Close" button to close the thermal cycler.</li>
+							<li> Click on "Run" button for PCR amplification. The schematic representaion of PCR amplification is displayed on right panel.</li>
+						</ol>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="row mt-1">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header fs-5">Action</div>
+					<div class="card-body">
+						<p class="fs-5" id="writeaction"></p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+ -->
+
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card card-body">
+					<div class="img-container">
+						<img class="img-fluid" id="pcrmachine" src="images/pcr-machine.png" alt="thermal-cycler">
+						<img class="img-fluid" id="cellplate" src="images/cells-plate.png" alt="Cell plate">
+						<div class="door door1 " style="float:left">
+						<img class="img-fluid " id="pcrmachinecover"  src="images/topscreen.png" style="display: block;"
+							alt="Thermal cycle top">
+							</div>
+						<img class="img-fluid" id="tube" src="images/tube.png"  
+							style="cursor: pointer; display: none; " alt="PCR tube">
+
+
+						<!-- <button type="button" class="btn border border-2 border-dark fs-6" id="back"><i class=" fa fa-arrow-left"></i></button>
+						
+						<button type="button" class="btn border border-2 border-dark" id="inst"></button>
+						<button type="button" class="btn border border-2 border-dark" id="del"></button>
+						<button type="button" class="btn border border-2 border-dark" id="option"></button>
+						<button type="button" class="btn border border-2 border-dark" id="save"></button>
+						<button type="button" class="btn border border-2 border-dark"  id="run"></button>-->
+   
+<canvas id="run" style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: none;" onclick="runpcr()" ></canvas>
+<p  class="fs-4 fw-bold" id="stepshead1" style="color:#0044A5">The basic steps of the PCR cycling reactions are:</p>
+<p class="fs-4 fw-bold" id="stepshead" style="color: #0A00A5 ;"> </p>
+						<img class="img-fluid" id="dnastrandsa" src="images/dnastrands.png" style= "display:none;" alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsb" src="images/dnastrandsb.png" style= "display:none;" alt="dnastrands">
+						<img class="img-fluid" id="dnaprimer" src="images/dnaprimer.png" style= "display:none;" alt="dnaprimer">
+						<img class="img-fluid" id="dnaprimerb" src="images/dnaprimerb.png" style= "display:none;" alt="dnaprimerb">
+
+						<img class="img-fluid" id="dnaprimerext" src="images/dnaexta.png" style= "display:none;" alt="dnaprimer">
+						<img class="img-fluid" id="dnaprimerextb" src="images/dnaextb.png" style= "display:none;" alt="dnaprimerb">
+
+						<canvas id="den3min" style="border:0px solid #000000; border-radius: 5px; cursor: pointer;" ></canvas>
+						<canvas id="ann2min" style="border:0px solid #000000; border-radius: 5px; cursor: pointer;" ></canvas>
+						<canvas id="ext1min" style="border:0px solid #000000; border-radius: 5px; cursor: pointer;" ></canvas>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-md-6">
+				<div class="card card-body" style="height: 800px;">
+					<div class="img-container">
+						<img class="img-fluid" id="dnastrandsa" src="images/dnastrands.png" alt="thermal-cycler">
+						<img class="img-fluid" id="dnastrandsb" src="images/dnastrands.png" alt="thermal-cycler">
+					</div>
+				</div>
+			</div> -->
+
+
+		</div>
+	</div>
+
+
+	<!-- Add JS at the bottom of HTML file -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./js/main.js"></script>
 </body>
+
 </html>
