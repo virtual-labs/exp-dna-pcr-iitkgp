@@ -52,14 +52,14 @@
 					<div class="card-header fs-5">Instructions</div>
 					<div class="card-body">
 						<ol>
-							<li>Click "Start" button. Then click on "Thawing" button.</li>
+							<li>Click "Start" button. Then click on "Thawing the PCR reaction components on ice" button.</li>
 							<li>Next click the "Preparation of PCR mixture" button to make the tube visible.</li>
 							<li>Click on "Incubation of the PCR reaction mixture in a thermal
 								cycler" button. Then click on "Open" button to open the thermal cycler. To placed the
 								tube in the cell plate, click on the tube. After tube is placed in the cell plate, click
 								on "Close" button to close the thermal cycler.</li>
-							<li> Click on "Run" button for PCR amplification. The schematic representaion of PCR
-								amplification is displayed on right panel.</li>
+							<li> Click on "Run" button of Thermal Cycler for PCR amplification. The schematic representaion of PCR
+								amplification will be appear on right panel.</li>
 						</ol>
 					</div>
 
@@ -70,18 +70,24 @@
 		<div class="row mt-1">
 			<div class="col-md-12">
 				<div class="card">
-					<div class="card-header fs-4 fw-bold text-center" id="cyclenum">Cycle 1</div>
+					<div class="card-header fs-4 fw-bold" id="actionhead" >Actions</div>
 					<div class="card-body">
-						
-						<p class="fs-5  card-text" >The basic steps of the PCR cycling
-							reactions are:</p>
+<p id="thaw" class="fs-5">  </p>
+<p id="prep" class="fs-5">  </p>
 
-						<p class="fs-5 fw-bold card-text" id="stepshead" >
-							<ul>
+						<p class="fs-5 fw-bold card-text" id="cyclenum"></p>
+						<!-- <p class="fs-5  card-text" >The basic steps of the PCR cycling
+							reactions are:</p> -->
+
+						<p class="fs-5 fw-bold card-text"  id="stepshead" ></p>
+						<p class="fs-5 fw-bold card-text"  id="stepsheadc21" style="display: none;" >1. Denaturation</p>
+						<p class="fs-5 fw-bold card-text"  id="stepsheadc22" style="display: none;">2. Annealing</p>
+						<p class="fs-5 fw-bold card-text"  id="stepsheadc23" style="display: none;">3. Extension</p>
+							<ol id="pcrsteps" style="display: none;">
 								<li class="fs-5" >Denaturation</li>
 								<li class="fs-5">Annealing</li>
 								<li class="fs-5">Extension</li>
-							</ul> </p>
+							</ol> 
 					</div>
 
 				</div>
@@ -112,7 +118,7 @@
 						<button type="button" class="btn border border-2 border-dark"  id="run"></button>-->
 
 						<canvas id="run"
-							style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: block;"
+							style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: none;"
 							onclick="runpcr()"></canvas>
 
 						<!-- cycle 1 started-->
@@ -133,9 +139,9 @@
 						<img class="img-fluid" id="dnaprimerextb" src="images/dnaextb.png" style="display:none;"
 							alt="dnaprimerextb"-->
 						<!--cycle 2 started -->
-						<img class="img-fluid" id="c2dna" src="images/c2dna.png" style="display:none;"
+						<img class="img-fluid" id="c2dna" src="images/c2dna.png" 
 							alt="c2dna">
-						<img class="img-fluid" id="c2dnaa" src="images/c2dnaa.png" style="display:none;"
+						<img class="img-fluid" id="c2dnaa" src="images/c2dnaa.png" 
 							alt="c2dnaa">
 
 							<img class="img-fluid" id="c2dnab" src="images/c2dnab.png" style="display:none;"
@@ -163,7 +169,9 @@
 							alt="dnastrandsc2ext">
 
 							<img class="img-fluid" id="dnac2extb" src="images/c2dnaextb.png" style="display:none;"
-							alt="dnastrands">
+							alt="dnastrandsc2ext">
+							<img class="img-fluid" id="c3" src="images/c3.png" style="display:none;"
+							alt="cycle3">
 
 
 						<canvas id="den3min"

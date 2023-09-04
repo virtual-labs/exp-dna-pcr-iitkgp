@@ -181,6 +181,7 @@
     width:20.8%;
     top:37%; /* 37 */
     left: 62.3%;   /*primer*/
+    display:none;
 }
 
 #c2dnaa{ /*bottom */
@@ -188,6 +189,7 @@
     width:27.5%;
     top:40%;  /* 40 */
     left:60%;
+    display:none;
     
 }
 
@@ -317,4 +319,11 @@
     left:16.7%; 
     background-color: transparent;
     transform: rotate(2deg);
+}
+
+#c3{
+    position: absolute;
+    width:30%;
+    top:10%; /* 27 */
+    left:61.1%;
 }
