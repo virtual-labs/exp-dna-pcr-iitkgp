@@ -2,16 +2,20 @@ var tubeimg;
 function start() {
   document.getElementById("step1").disabled = false;
   document.getElementById("step0").disabled = true;
+  alert("A desktop or laptop is the preferred choice for an enhanced viewing experience.");
 }
 
 function thaw() {
-  //document.getElementById("writeaction").innerHTML="Thawing the PCR reaction components on ice";
+  document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+  document.getElementById("thaw").innerHTML = "All the components of the PCR reaction must be thawed and centrifuged before use. ";
   document.getElementById("step2").disabled = false;
   document.getElementById("step1").disabled = true;
 }
 
 function prepmix() {
-  //document.getElementById("writeaction").innerHTML="Preparation of the PCR reaction mix";
+  document.getElementById("thaw").innerHTML = "";
+  document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
+  document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
   document.getElementById("tube").style.display = "block";
   tubeimg = document.getElementById('tube');
   document.getElementById("step3").disabled = false;
@@ -22,7 +26,9 @@ function prepmix() {
 
 
 function PCRincub() {
-  // document.getElementById("writeaction").innerHTML="Incubation of the PCR reaction mixture in a thermal cycler";
+  document.getElementById("prep").innerHTML = "";
+  document.getElementById("actionhead").innerHTML = "Action: Incubation of the PCR reaction mixture in a thermal cycler";
+ // document.getElementById("cyclenum").innerHTML = "Cycle 1";
   document.getElementById("opentc").style.display = "block";
   //document.getElementById("step3").disabled=true;
 }
@@ -143,15 +149,17 @@ var imgdnac2sepb = null;
 function runpcr() {
   document.getElementById("dnastrandsa").style.display = "block";
   document.getElementById("dnastrandsb").style.display = "block";
+  document.getElementById("run").style.display = "none";
   document.getElementById("stepshead").innerHTML = "1. Denaturation";
   document.getElementById("den3min").style.background = "#ADFFF5 ";
   document.getElementById("den3min").style.opacity = "50%";
+  document.getElementById("cyclenum").innerHTML = "Cycle 1";
   setTimeout(separatedna, 2000);
   setTimeout(separatednb, 2000);
 
   function separatedna() {
 
-
+   
     var dnaa = document.getElementById("dnastrandsa");
 
     var dnatopp = 35; //initial  position
@@ -246,7 +254,7 @@ function runpcr() {
   }
 
   function primerextdnaa() {
-    document.getElementById("ann2min").style.opacity = "0%";
+    document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
     document.getElementById("stepshead").innerHTML = "3. Extension";
@@ -254,51 +262,52 @@ function runpcr() {
     document.getElementById("dnaprimer").style.display = "none";
     document.getElementById("c2dna").style.display = "block";
     document.getElementById("c2dnaa").style.display = "block";
-    //setTimeout(gotostep2, 2000);
-    setTimeout(c2dnaseparatea, 5000);
-    
+   //setTimeout(gotostep2, 2000);
+    //setTimeout(c2dnaseparatea, 5000);
+
 
   }
 
 
 
   function primerextdnab() {
-    document.getElementById("ann2min").style.opacity = "0%";
+    document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
     document.getElementById("stepshead").innerHTML = "3. Extension";
-
     document.getElementById("dnastrandsb").style.display = "none";
     document.getElementById("dnaprimerb").style.display = "none";
     document.getElementById("c2dnab").style.display = "block";
     document.getElementById("c2dnac").style.display = "block";
-    //setTimeout(gotostep2, 2000);
-    setTimeout(c2dnaseparateb, 5000);
+    setTimeout(gotostep2, 5000);
+    //setTimeout(c2dnaseparateb, 5000);
 
   }
 
-/* function gotostep2(){
-  document.getElementById("goto2").style.background = "#ADFFF5 ";
-  document.getElementById("goto2").style.opacity = "50%";
-  document.getElementById("ext1min").style.opacity = "0%";
-  document.getElementById("cyclenum").innerHTML = "Cycle 2"; 
-  
-  setTimeout(c2dnaseparateb, 5000);
-  setTimeout(c2dnaseparatea, 5000);
-} */
+  function gotostep2() {
+    document.getElementById("goto2").style.background = "#ADFFF5 ";
+    document.getElementById("goto2").style.opacity = "50%";
+    document.getElementById("ext1min").style.display = "none";
+    document.getElementById("cyclenum").innerHTML = "Go to step 2";
+    document.getElementById("stepshead").style.display = "none";
+    setTimeout(c2dnaseparatea, 3000);
+    setTimeout(c2dnaseparateb, 3000);
+  }
 
 
 
 
-//Cycle 2 starts
+  //Cycle 2 starts
 
 
   function c2dnaseparateb() {
-   document.getElementById("stepshead").innerHTML = "1. Denaturation";
-   document.getElementById("den2min").style.background = "#ADFFF5 ";
+    document.getElementById("stepsheadc21").style.display = "block";
+    document.getElementById("pcrsteps").style.display = "none";
+    document.getElementById("den2min").style.background = "#ADFFF5 ";
     document.getElementById("den2min").style.opacity = "50%";
-   
-    document.getElementById("cyclenum").innerHTML = "Cycle 2"; 
+    document.getElementById("goto2").style.display = "none";
+    document.getElementById("stepshead").style.display = "none";
+    document.getElementById("cyclenum").innerHTML = "Cycle 2";
     var dnac2sepb = document.getElementById("c2dnaa");
 
     var dnasepbtopp = 40; //initial  position
@@ -321,12 +330,14 @@ function runpcr() {
 
 
   function c2dnaseparatea() {
-   
-     document.getElementById("stepshead").innerHTML = "1. Denaturation";
+    document.getElementById("stepsheadc21").style.display = "block";
+    document.getElementById("pcrsteps").style.display = "none";
+    document.getElementById("stepshead").style.display = "none";
     document.getElementById("den2min").style.background = "#ADFFF5 ";
     document.getElementById("den2min").style.opacity = "50%";
-    
-    document.getElementById("cyclenum").innerHTML = "Cycle 2"; 
+    document.getElementById("goto2").style.display = "none";
+
+    document.getElementById("cyclenum").innerHTML = "Cycle 2";
     var dnac2sep = document.getElementById("c2dnab");
     dnac2sep.style.top = 30 + '%';
     setTimeout(c2dnaprimer, 5000);
@@ -348,11 +359,12 @@ function runpcr() {
     } */
   }
 
-  function c2dnaprimer(){
-    document.getElementById("den2min").style.opacity = "0%";
-    document.getElementById("ann2min").style.background = "#ADFFF5 ";
-    document.getElementById("ann2min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "2. Annealing";
+  function c2dnaprimer() {
+    document.getElementById("stepsheadc21").style.display = "none";
+    document.getElementById("stepsheadc22").style.display = "block";
+    document.getElementById("den2min").style.display = "none";
+    document.getElementById("ann2min").style.display = "block";
+    document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     document.getElementById("dnaprimerc2").style.display = "block";
     document.getElementById("dnaprimer12c2").style.display = "block";
@@ -362,16 +374,46 @@ function runpcr() {
 
   }
 
-  function c2dnaext(){
-    document.getElementById("ann2min").style.opacity = "0%";
-    document.getElementById("ext1min").style.background = "#ADFFF5 ";
-    document.getElementById("ext1min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "3. Extension";
+  function c2dnaext() {
+    document.getElementById("stepsheadc22").style.display = "none";
+    document.getElementById("ann2min").style.display = "none";
+    document.getElementById("stepsheadc23").style.display = "block";
+    document.getElementById("ext1min").style.display = "block";
+    document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     document.getElementById("dnastrandsac2ext").style.display = "block";
     document.getElementById("dnastrandsbc2ext").style.display = "block";
     document.getElementById("dnac2exta").style.display = "block";
     document.getElementById("dnac2extb").style.display = "block";
+    setTimeout(cycle3, 5000);
+
+  }
+  function cycle3() {
+    document.getElementById("stepsheadc23").style.display = "none";
+    document.getElementById("pcrsteps").style.display = "block";
+    document.getElementById("cyclenum").innerHTML = "Cycle 3";
+    document.getElementById("ext1min").style.display = "none";
+    document.getElementById("stepshead").style.display = "none";
+    document.getElementById("c3").style.display = "block";
+    document.getElementById("c2dna").style.visibility = "hidden";
+    document.getElementById("c2dnaa").style.visibility = "hidden";
+    document.getElementById("c2dnab").style.display = "none";
+    document.getElementById("c2dnac").style.display = "none";
+    document.getElementById("dnastrandsac2ext").style.display = "none";
+    document.getElementById("dnastrandsbc2ext").style.display = "none";
+    document.getElementById("dnac2exta").style.display = "none";
+    document.getElementById("dnac2extb").style.display = "none";
+    document.getElementById("dnaprimerc2").style.display = "none";
+    document.getElementById("dnaprimer12c2").style.display = "none";
+    document.getElementById("dnaprimerc2b").style.display = "none";
+    document.getElementById("dnaprimer22c2b").style.display = "none";
+    document.getElementById("dnaprimerb").style.display = "none";
+    document.getElementById("dnaprimer").style.display = "none";
+    document.getElementById("dnastrandsa").style.display = "none";
+    document.getElementById("dnastrandsb").style.display = "none";
+
+
+
   }
 
 }
