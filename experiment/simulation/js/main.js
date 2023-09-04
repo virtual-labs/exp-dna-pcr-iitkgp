@@ -154,6 +154,7 @@ function runpcr() {
   document.getElementById("den3min").style.background = "#ADFFF5 ";
   document.getElementById("den3min").style.opacity = "50%";
   document.getElementById("cyclenum").innerHTML = "Cycle 1";
+  document.getElementById("stepcycle").style.display = "block";
   setTimeout(separatedna, 2000);
   setTimeout(separatednb, 2000);
 
