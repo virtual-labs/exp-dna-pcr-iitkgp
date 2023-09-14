@@ -1,4 +1,9 @@
-/* You CSS goes in here */
+/*  
+Lab name: Experimental Biochemistry
+Exp name: DNA amplification by polymerase chain reaction (PCR)
+File name: main.css
+Developer: Prakriti Dhang
+*/
 
 .card{
     margin-bottom: 5px;
@@ -70,6 +75,75 @@
     left:40%;  
    
 }
+
+#tube1{
+    position: absolute;
+    width:1.2%;
+    top:9%;
+    left:45.6%;  
+    z-index: 10;
+   
+}
+#tube2{
+    position: absolute;
+    width:1.2%;
+    top:8%;
+    left:47%;  
+    z-index: 10;
+   
+}
+
+#tube3{
+    position: absolute;
+    width:1.2%;
+    top:10%;
+    left:48.5%;  
+    z-index: 10;
+   
+}
+#tube4{
+    position: absolute;
+    width:1.2%;
+    top:8%;
+    left:50%;  
+    z-index: 10;
+   
+}
+#tube5{
+    position: absolute;
+    width:1.2%;
+    top:10%;
+    left:51.5%;  
+    z-index: 10;
+   
+}
+
+#tube6{
+    position: absolute;
+    width:1.2%;
+    top:9%;
+    left:53%;  
+    z-index: 10;
+   
+}
+
+#icebucket{
+    position: absolute;
+    width:10%;
+    top:15%;
+    left:45%;  
+   
+}
+
+#ice{
+    position: absolute;
+    width:10%;
+    top:16%;
+    left:45%;  
+    z-index: 10;
+   
+}
+
 
 #back{
     position: absolute;

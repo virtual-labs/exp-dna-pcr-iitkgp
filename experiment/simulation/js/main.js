@@ -1,26 +1,83 @@
+/*  
+Lab name: Experimental Biochemistry
+Exp name: DNA amplification by polymerase chain reaction (PCR)
+File name: main.js
+Developer: Prakriti Dhang
+*/
+
 var tubeimg;
 function start() {
   document.getElementById("step1").disabled = false;
   document.getElementById("step0").disabled = true;
-  alert("A desktop or laptop is the preferred choice for an enhanced viewing experience.");
+  //alert("A desktop or laptop is the preferred choice for an enhanced viewing experience.");
+}
+var thawcomponents = document.getElementById("step1");
+function thawcomp() {
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 0) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = "The components of the PCR reaction that are thawed and centrifuged:  ";
+
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 1) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    document.getElementById("tube1").style.display = "block";
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 2) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + "has been added in the ice bucket";
+    document.getElementById("tube2").style.display = "block";
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 3) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    document.getElementById("tube3").style.display = "block";
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 5) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket" ;
+    document.getElementById("tube4").style.display = "block";
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 6) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    document.getElementById("tube5").style.display = "block";
+  }
+  if (thawcomponents.options[thawcomponents.selectedIndex].value == 7) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    document.getElementById("tube6").style.display = "block";
+  }
+  if((thawcomponents.options[thawcomponents.selectedIndex].value == 4) || (thawcomponents.options[thawcomponents.selectedIndex].value == 8) || (thawcomponents.options[thawcomponents.selectedIndex].value == 9) ||(thawcomponents.options[thawcomponents.selectedIndex].value == 10)){
+  document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " is not a correct component";
+}
 }
 
-function thaw() {
-  document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-  document.getElementById("thaw").innerHTML = "All the components of the PCR reaction must be thawed and centrifuged before use. ";
-  document.getElementById("step2").disabled = false;
-  document.getElementById("step1").disabled = true;
-}
 
 function prepmix() {
-  document.getElementById("thaw").innerHTML = "";
+  if((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked) && (document.getElementById('opt7').checked)){
+   alert("correct");
+   document.getElementById("tube").style.display = "block";
+   document.getElementById("step2").disabled = true;
+   document.getElementById("thaw").innerHTML = "";
   document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
-  document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
-  document.getElementById("tube").style.display = "block";
+  document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
   tubeimg = document.getElementById('tube');
   document.getElementById("step3").disabled = false;
-  document.getElementById("step2").disabled = true;
+  //
   tubeimg.removeEventListener('click', tubeinsert);
+}
+  else if((document.getElementById('opt1').checked== false) || (document.getElementById('opt2').checked== false) || (document.getElementById('opt3').checked== false) || (document.getElementById('opt4').checked== false) || (document.getElementById('opt5').checked== false) || (document.getElementById('opt6').checked== false) || (document.getElementById('opt7').checked == false)){
+    alert("One or more component(s) is(are) required for preparing the mixture.");
+    document.getElementById("thaw").innerHTML = "";
+  document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
+  document.getElementById("prep").innerHTML = "One or more component(s) is(are) required for preparing the mixture.";
+  }
+  
+ // document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
+ 
+ 
 }
 
 
@@ -28,7 +85,7 @@ function prepmix() {
 function PCRincub() {
   document.getElementById("prep").innerHTML = "";
   document.getElementById("actionhead").innerHTML = "Action: Incubation of the PCR reaction mixture in a thermal cycler";
- // document.getElementById("cyclenum").innerHTML = "Cycle 1";
+  // document.getElementById("cyclenum").innerHTML = "Cycle 1";
   document.getElementById("opentc").style.display = "block";
   //document.getElementById("step3").disabled=true;
 }
@@ -150,7 +207,8 @@ function runpcr() {
   document.getElementById("dnastrandsa").style.display = "block";
   document.getElementById("dnastrandsb").style.display = "block";
   document.getElementById("run").style.display = "none";
-  document.getElementById("stepshead").innerHTML = "1. Denaturation";
+  //document.getElementById("stepshead").innerHTML = "1. Denaturation";
+  document.getElementById("pcrstp1").style.display = "block";
   document.getElementById("den3min").style.background = "#ADFFF5 ";
   document.getElementById("den3min").style.opacity = "50%";
   document.getElementById("cyclenum").innerHTML = "Cycle 1";
@@ -160,7 +218,7 @@ function runpcr() {
 
   function separatedna() {
 
-   
+
     var dnaa = document.getElementById("dnastrandsa");
 
     var dnatopp = 35; //initial  position
@@ -208,7 +266,8 @@ function runpcr() {
     document.getElementById("den3min").style.opacity = "0%";
     document.getElementById("ann2min").style.background = "#ADFFF5 ";
     document.getElementById("ann2min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "2. Annealing";
+    //document.getElementById("stepshead").innerHTML = "2. Annealing";
+    document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("dnaprimer").style.display = "block";
     var dnapria = document.getElementById("dnaprimer");
 
@@ -233,7 +292,8 @@ function runpcr() {
     document.getElementById("den3min").style.opacity = "0%";
     document.getElementById("ann2min").style.background = "#ADFFF5 ";
     document.getElementById("ann2min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "2. Annealing";
+    // document.getElementById("stepshead").innerHTML = "2. Annealing";
+    document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("dnaprimerb").style.display = "block";
     var dnaprib = document.getElementById("dnaprimerb");
 
@@ -258,12 +318,13 @@ function runpcr() {
     document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "3. Extension";
+    //document.getElementById("stepshead").innerHTML = "3. Extension";
+    document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("dnastrandsa").style.display = "none";
     document.getElementById("dnaprimer").style.display = "none";
     document.getElementById("c2dna").style.display = "block";
     document.getElementById("c2dnaa").style.display = "block";
-   //setTimeout(gotostep2, 2000);
+    //setTimeout(gotostep2, 2000);
     //setTimeout(c2dnaseparatea, 5000);
 
 
@@ -275,7 +336,8 @@ function runpcr() {
     document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
-    document.getElementById("stepshead").innerHTML = "3. Extension";
+    //document.getElementById("stepshead").innerHTML = "3. Extension";
+    document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("dnastrandsb").style.display = "none";
     document.getElementById("dnaprimerb").style.display = "none";
     document.getElementById("c2dnab").style.display = "block";
@@ -290,7 +352,10 @@ function runpcr() {
     document.getElementById("goto2").style.opacity = "50%";
     document.getElementById("ext1min").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Go to step 2";
-    document.getElementById("stepshead").style.display = "none";
+    document.getElementById("pcrstp1").style.display = "block";
+    document.getElementById("pcrstp2").style.display = "block";
+    document.getElementById("pcrstp3").style.display = "block";
+    //document.getElementById("stepshead").style.display = "none";
     setTimeout(c2dnaseparatea, 3000);
     setTimeout(c2dnaseparateb, 3000);
   }
@@ -302,12 +367,13 @@ function runpcr() {
 
 
   function c2dnaseparateb() {
-    document.getElementById("stepsheadc21").style.display = "block";
-    document.getElementById("pcrsteps").style.display = "none";
+    document.getElementById("pcrstp1").style.display = "block";
+    //document.getElementById("stepsheadc21").style.display = "block";
+    //document.getElementById("pcrsteps").style.display = "none";
     document.getElementById("den2min").style.background = "#ADFFF5 ";
     document.getElementById("den2min").style.opacity = "50%";
     document.getElementById("goto2").style.display = "none";
-    document.getElementById("stepshead").style.display = "none";
+    //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     var dnac2sepb = document.getElementById("c2dnaa");
 
@@ -331,9 +397,10 @@ function runpcr() {
 
 
   function c2dnaseparatea() {
-    document.getElementById("stepsheadc21").style.display = "block";
-    document.getElementById("pcrsteps").style.display = "none";
-    document.getElementById("stepshead").style.display = "none";
+    // document.getElementById("stepsheadc21").style.display = "block";
+    document.getElementById("pcrstp1").style.display = "block";
+    //document.getElementById("pcrsteps").style.display = "none";
+    //document.getElementById("stepshead").style.display = "none";
     document.getElementById("den2min").style.background = "#ADFFF5 ";
     document.getElementById("den2min").style.opacity = "50%";
     document.getElementById("goto2").style.display = "none";
@@ -361,26 +428,28 @@ function runpcr() {
   }
 
   function c2dnaprimer() {
-    document.getElementById("stepsheadc21").style.display = "none";
-    document.getElementById("stepsheadc22").style.display = "block";
+
+    document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("den2min").style.display = "none";
     document.getElementById("ann2min").style.display = "block";
-    document.getElementById("stepshead").style.display = "none";
+    //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     document.getElementById("dnaprimerc2").style.display = "block";
     document.getElementById("dnaprimer12c2").style.display = "block";
     document.getElementById("dnaprimerc2b").style.display = "block";
     document.getElementById("dnaprimer22c2b").style.display = "block";
+    //document.getElementById("stepsheadc21").style.display = "none";
+    // document.getElementById("stepsheadc22").style.display = "block";
     setTimeout(c2dnaext, 5000);
 
   }
 
   function c2dnaext() {
-    document.getElementById("stepsheadc22").style.display = "none";
+    document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("ann2min").style.display = "none";
-    document.getElementById("stepsheadc23").style.display = "block";
+    // document.getElementById("stepsheadc23").style.display = "block";
     document.getElementById("ext1min").style.display = "block";
-    document.getElementById("stepshead").style.display = "none";
+    //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     document.getElementById("dnastrandsac2ext").style.display = "block";
     document.getElementById("dnastrandsbc2ext").style.display = "block";
@@ -390,11 +459,14 @@ function runpcr() {
 
   }
   function cycle3() {
-    document.getElementById("stepsheadc23").style.display = "none";
-    document.getElementById("pcrsteps").style.display = "block";
+    document.getElementById("pcrstp1").style.display = "block";
+    document.getElementById("pcrstp2").style.display = "block";
+    document.getElementById("pcrstp3").style.display = "block";
+    //document.getElementById("stepsheadc23").style.display = "none";
+    //document.getElementById("pcrsteps").style.display = "block";
     document.getElementById("cyclenum").innerHTML = "Cycle 3";
     document.getElementById("ext1min").style.display = "none";
-    document.getElementById("stepshead").style.display = "none";
+    //document.getElementById("stepshead").style.display = "none";
     document.getElementById("c3").style.display = "block";
     document.getElementById("c2dna").style.visibility = "hidden";
     document.getElementById("c2dnaa").style.visibility = "hidden";
