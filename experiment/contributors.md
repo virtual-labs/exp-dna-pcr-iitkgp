@@ -12,15 +12,9 @@
 <b> Email id|     <b>  dibyendu.samanta@iitkgp.ac.in
 <b> Department |  School of Bioscience
 
-### Developer and Integration Engineer
-
-SrNo | Name  | Department| Institute| 
-:--|:--|:--|:--|
-1 | **Prakriti Dhang** |  Department of Mechanical Engineering | IIT Kharagpur |
-
-
 ### Contributors List
 
-SrNo | Name | Designation | Department| Institute| 
-:--|:--|:--|:--|:--|
-1 | **Namrata Ganguli** | Research Scholar | School of Bioscience | IIT Kharagpur |
+SrNo | Name  |Designation| Department| Institute| 
+:--|:--|:--|:--|
+1 | **Prakriti Dhang** |  Developer and Integration Engineer| Department of Mechanical Engineering | IIT Kharagpur |
+2 | **Namrata Ganguli** | Research Scholar | School of Bioscience | IIT Kharagpur |
