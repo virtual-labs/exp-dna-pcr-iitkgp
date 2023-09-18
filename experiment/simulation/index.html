@@ -64,7 +64,8 @@ Developer: Prakriti Dhang
 							</li>
 							<li>In step 1, select components from the dropdown and click on "Thawing the PCR reaction
 								components on ice" button.</li>
-							<li>In step 2, select components for PCR mixture and click on "Preparation of PCR mixture" button.
+							<li>In step 2, select components for PCR mixture and click on "Preparation of PCR mixture"
+								button.
 							</li>
 							<li>In step 3, click on "Incubation of the PCR reaction mixture in a thermal
 								cycler" button. Then click on "Open" button to open the thermal cycler. To placed the
@@ -114,29 +115,36 @@ Developer: Prakriti Dhang
 					<div class="card-header fs-5 fw-bold">Input panels</div>
 					<div class="card-body">
 						<table id="ex2tb2" class="m-2 table table-bordered">
-							<tr><td colspan="2">
-						<button id="step0" type="button" class="btn btn-success border border-2  rounded-3 fs-5 m-2"
-							style="cursor: pointer; float:center" data-bs-toggle="modal"
-							data-bs-target="#exampleModal">Click to Start the Experiment</button>
-						</td></tr>
-						<tr><td class="fs-5">Step 1</td><td>
-						<select id="step1" class="form-select m-2 fs-5 " aria-label="Default select example"
-							onchange="thawcomp()" disabled>
-							<option value="0" selected>Choose the PCR reaction components for thwaing on
-								ice</option>
-							<option value="1">Forward Primers</option>
-							<option value="2">Reverse Primers</option>
-							<option value="3">Template DNA</option>
-							<option value="4">Taq. Polymerase</option>
-							<option value="5">dNTPs</option>
-							<option value="6">Mg<sup>2+</sup>ions</option>
-							<option value="7">DNA polymerase</option>
-							<option value="8">RNA polymerase</option>
-							<option value="9">Ligase</option>
-							<option value="10">Restriction enzymes</option>
-						</select>
-					</td></tr>
-							<tr><td rowspan="2" class="fs-5">Step 2</td>
+							<tr>
+								<td colspan="2">
+									<button id="step0" type="button"
+										class="btn btn-success border border-2  rounded-3 fs-5 m-2"
+										style="cursor: pointer; float:center" data-bs-toggle="modal"
+										data-bs-target="#exampleModal">Click to Start the Experiment</button>
+								</td>
+							</tr>
+							<tr>
+								<td class="fs-5">Step 1</td>
+								<td>
+									<select id="step1" class="form-select m-2 fs-5 " aria-label="Default select example"
+										onchange="thawcomp()" disabled>
+										<option value="0" selected>Choose the PCR reaction components for thwaing on
+											ice</option>
+										<option value="1">Forward Primers</option>
+										<option value="2">Reverse Primers</option>
+										<option value="3">Template DNA</option>
+										<option value="4">Taq. Polymerase</option>
+										<option value="5">dNTPs</option>
+										<option value="6">Mg<sup>2+</sup>ions</option>
+										<option value="7">DNA polymerase</option>
+										<option value="8">RNA polymerase</option>
+										<option value="9">Ligase</option>
+										<option value="10">Restriction enzymes</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="fs-5">Step 2</td>
 								<td>
 									<div id="opta" class="form-check form-check-inline fs-5">
 										<input class="form-check-input" type="checkbox" value="" id="opt1">
@@ -150,33 +158,28 @@ Developer: Prakriti Dhang
 											Reverse Primers
 										</label>
 									</div>
+
 									<div id="optc" class="form-check form-check-inline fs-5">
 										<input class="form-check-input" type="checkbox" value="" id="opt3">
 										<label class="form-check-label" for="opt3">
-											Reverse Primers
+											Template DNA
 										</label>
 									</div>
 									<div id="optd" class="form-check form-check-inline fs-5">
 										<input class="form-check-input" type="checkbox" value="" id="opt4">
 										<label class="form-check-label" for="opt4">
-											Template DNA
+											dNTPs
 										</label>
 									</div>
-									<div id="opta" class="form-check form-check-inline fs-5">
+									<div id="opte" class="form-check form-check-inline fs-5">
 										<input class="form-check-input" type="checkbox" value="" id="opt5">
 										<label class="form-check-label" for="opt5">
-											dNTPs
+											Mg<sup>2+</sup>ions
 										</label>
 									</div>
 									<div id="optf" class="form-check form-check-inline fs-5">
 										<input class="form-check-input" type="checkbox" value="" id="opt6">
 										<label class="form-check-label" for="opt6">
-											Mg<sup>2+</sup>ions
-										</label>
-									</div>
-									<div id="opta" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt7">
-										<label class="form-check-label" for="opt7">
 											DNA polymerase
 										</label>
 									</div>
@@ -189,19 +192,24 @@ Developer: Prakriti Dhang
 										onclick="prepmix()" style="cursor: pointer;">Preparation of PCR mixture</button>
 								</td>
 							</tr>
-						
-						<tr><td class="fs-5">Step 3</td>
-							<td>
-						<button id="step3" type="button"
-							class="btn btn-primary border border-1 border-info rounded-2 fs-5 m-2" onclick="PCRincub()"
-							style="cursor: pointer;" disabled>Incubation of the PCR reaction mixture in a
-							thermal
-							cycler</button>
 
-						<button type="button" id="opentc"
-							class="open btn btn-warning border border-2 border-success rounded-1 fs-5 m-2"
-							onclick="openthermalcycle()" style="cursor: pointer;display: none;">Open</button>
-</td></tr></table>
+							<tr>
+								<td class="fs-5">Step 3</td>
+								<td>
+									<button id="step3" type="button"
+										class="btn btn-primary border border-1 border-info rounded-2 fs-5 m-2"
+										onclick="PCRincub()" style="cursor: pointer;" disabled>Incubation of the PCR
+										reaction mixture in a
+										thermal
+										cycler</button>
+
+									<button type="button" id="opentc"
+										class="open btn btn-warning border border-2 border-success rounded-1 fs-5 m-2"
+										onclick="openthermalcycle()"
+										style="cursor: pointer;display: none;">Open</button>
+								</td>
+							</tr>
+						</table>
 					</div>
 
 				</div>
@@ -228,7 +236,7 @@ Developer: Prakriti Dhang
 							<button id="pcrstp3" type="button" class="btn btn-warning  rounded-2 fs-5 mb-2"
 								style="cursor: pointer; display:none;"> Extension</button>
 						</div>-->
-						<!---p class="fs-5 fw-bold card-text"  id="stepshead" ></p>
+		<!---p class="fs-5 fw-bold card-text"  id="stepshead" ></p>
 						<p class="fs-5 fw-bold card-text"  id="stepsheadc21" style="display: none;" >1. Denaturation</p>
 						<p class="fs-5 fw-bold card-text"  id="stepsheadc22" style="display: none;">2. Annealing</p>
 						<p class="fs-5 fw-bold card-text"  id="stepsheadc23" style="display: none;">3. Extension</p>
@@ -237,7 +245,7 @@ Developer: Prakriti Dhang
 								<li class="fs-5 fw-bold">Annealing</li>
 								<li class="fs-5 fw-bold">Extension</li>
 							</ol-->
-					<!--/div>
+		<!--/div>
 
 				</div>
 			</div>
@@ -255,27 +263,27 @@ Developer: Prakriti Dhang
 							<img class="img-fluid " id="pcrmachinecover" src="images/topscreen.png"
 								style="display: block;" alt="Thermal cycle top">
 						</div>
-						<img class="img-fluid" id="tube" src="images/tube.png" style="cursor: pointer; display: none; "
+						<img class="img-fluid" id="tube" src="images/tube.png" style="cursor: pointer; display: block; "
 							alt="PCR tube">
 
 
 						<img class="img-fluid" id="tube1" src="images/primers.png"
-							style="cursor: pointer; display: none; " alt="PCR tube1">
+							style="cursor: pointer; display: block; " alt="PCR tube1">
 						<img class="img-fluid" id="tube2" src="images/primers.png"
-							style="cursor: pointer; display: none; " alt="PCR tube2">
+							style="cursor: pointer; display: block; " alt="PCR tube2">
 						<img class="img-fluid" id="tube3" src="images/templatedna.png"
-							style="cursor: pointer; display: none; " alt="PCR tube3">
-						<img class="img-fluid" id="tube4" src="images/dntp.png" style="cursor: pointer; display: none; "
+							style="cursor: pointer; display: block; " alt="PCR tube3">
+						<img class="img-fluid" id="tube4" src="images/dntp.png" style="cursor: pointer; display: block; "
 							alt="PCR tube4">
-						<img class="img-fluid" id="tube5" src="images/mg2.png" style="cursor: pointer; display: none; "
+						<img class="img-fluid" id="tube5" src="images/mg2.png" style="cursor: pointer; display: block; "
 							alt="PCR tube5">
 						<img class="img-fluid" id="tube6" src="images/dnapolymerase.png"
-							style="cursor: pointer; display: none; " alt="PCR tube6">
+							style="cursor: pointer; display: block; " alt="PCR tube6">
 
-						<img class="img-fluid" id="icebucket" src="images/icebucket.png"
+						<img class="img-fluid" id="icebucket" src="images/ice_bucket.png"
 							style="cursor: pointer; display: block; " alt="icebucket">
 
-						<img class="img-fluid" id="ice" src="images/ices.png" style="cursor: pointer; display:block; "
+						<img class="img-fluid" id="ice" src="images/ices.png" style="cursor: pointer; display:none; "
 							alt="ices">
 
 
