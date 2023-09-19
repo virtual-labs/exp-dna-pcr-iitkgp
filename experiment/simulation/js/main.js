@@ -56,7 +56,7 @@ function thawcomp() {
 
 
 function prepmix() {
-  if((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked) && (document.getElementById('opt7').checked)){
+  if((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked) ){
    alert("correct");
    document.getElementById("tube").style.display = "block";
    document.getElementById("step2").disabled = true;
@@ -68,7 +68,7 @@ function prepmix() {
   //
   tubeimg.removeEventListener('click', tubeinsert);
 }
-  else if((document.getElementById('opt1').checked== false) || (document.getElementById('opt2').checked== false) || (document.getElementById('opt3').checked== false) || (document.getElementById('opt4').checked== false) || (document.getElementById('opt5').checked== false) || (document.getElementById('opt6').checked== false) || (document.getElementById('opt7').checked == false)){
+  else if((document.getElementById('opt1').checked== false) || (document.getElementById('opt2').checked== false) || (document.getElementById('opt3').checked== false) || (document.getElementById('opt4').checked== false) || (document.getElementById('opt5').checked== false) || (document.getElementById('opt6').checked== false)){
     alert("One or more component(s) is(are) required for preparing the mixture.");
     document.getElementById("thaw").innerHTML = "";
   document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
