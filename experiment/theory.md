@@ -15,7 +15,7 @@ The basic principle of PCR relies on amplifying a specific DNA sequence into mil
 
 6.	**Buffer:** PCR is carried out in a buffer that provides a suitable chemical environment for activity and stability of DNA polymerase. The buffer pH is usually between 8.0 and 9.5.The salt composition of the buffer differs for different kind of DNA polymerases.
 
-<img src="images/PCR_tube.jpg" width="30%">
+<img src="images/Components.png" width="30%">
 
 The components required for PCR are assembled in a tube, along with cofactors needed by the enzyme as shown in the figure above, and are put through repeated cycles of heating and cooling in a thermal cycler that allow DNA to be synthesized.
 

@@ -118,9 +118,14 @@ Developer: Prakriti Dhang
 							<tr>
 								<td colspan="2">
 									<button id="step0" type="button"
-										class="btn btn-success border border-2  rounded-3 fs-5 m-2"
-										style="cursor: pointer; float:center" data-bs-toggle="modal"
+										class="btn btn-success border border-1  rounded-3 fs-5 m-2"
+										style="cursor: pointer; " data-bs-toggle="modal"
 										data-bs-target="#exampleModal">Click to Start the Experiment</button>
+
+										<button id="steprs" type="button"
+										class="btn btn-warning border border-1  rounded-3 fs-5 m-2"
+										style="cursor: pointer; float:right " data-bs-toggle="modal"
+										data-bs-target="#exampleModal" onclick="restartexp()">Re-Do the Experiment</button>
 								</td>
 							</tr>
 							<tr>
@@ -128,7 +133,7 @@ Developer: Prakriti Dhang
 								<td>
 									<select id="step1" class="form-select m-2 fs-5 " aria-label="Default select example"
 										onchange="thawcomp()" disabled>
-										<option value="0" selected>Choose the PCR reaction components for thwaing on
+										<option value="0" selected>Choose the PCR reaction components for thawing on
 											ice</option>
 										<option value="1">Forward Primers</option>
 										<option value="2">Reverse Primers</option>
@@ -136,10 +141,8 @@ Developer: Prakriti Dhang
 										<option value="4">Taq. Polymerase</option>
 										<option value="5">dNTPs</option>
 										<option value="6">Mg<sup>2+</sup>ions</option>
-										<option value="7">DNA polymerase</option>
-										<option value="8">RNA polymerase</option>
-										<option value="9">Ligase</option>
-										<option value="10">Restriction enzymes</option>
+										<option value="8">Ligase</option>
+										<option value="9">Restriction enzymes</option>
 									</select>
 								</td>
 							</tr>
@@ -147,40 +150,40 @@ Developer: Prakriti Dhang
 								<td rowspan="2" class="fs-5">Step 2</td>
 								<td>
 									<div id="opta" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt1">
+										<input class="form-check-input" type="checkbox" value="" id="opt1" disabled>
 										<label class="form-check-label" for="opt1">
 											Forward Primers
 										</label>
 									</div>
 									<div id="optb" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt2">
+										<input class="form-check-input" type="checkbox" value="" id="opt2" disabled>
 										<label class="form-check-label" for="opt2">
 											Reverse Primers
 										</label>
 									</div>
 
 									<div id="optc" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt3">
+										<input class="form-check-input" type="checkbox" value="" id="opt3" disabled>
 										<label class="form-check-label" for="opt3">
 											Template DNA
 										</label>
 									</div>
 									<div id="optd" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt4">
+										<input class="form-check-input" type="checkbox" value="" id="opt4" disabled>
 										<label class="form-check-label" for="opt4">
 											dNTPs
 										</label>
 									</div>
 									<div id="opte" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt5">
+										<input class="form-check-input" type="checkbox" value="" id="opt5" disabled>
 										<label class="form-check-label" for="opt5">
 											Mg<sup>2+</sup>ions
 										</label>
 									</div>
 									<div id="optf" class="form-check form-check-inline fs-5">
-										<input class="form-check-input" type="checkbox" value="" id="opt6">
+										<input class="form-check-input" type="checkbox" value="" id="opt6" disabled>
 										<label class="form-check-label" for="opt6">
-											DNA polymerase
+											Taq. polymerase
 										</label>
 									</div>
 
@@ -297,28 +300,75 @@ Developer: Prakriti Dhang
 						<button type="button" class="btn border border-2 border-dark"  id="run"></button>-->
 
 						<canvas id="run"
-							style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: none;"
+							style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: block;"
 							onclick="runpcr()"></canvas>
 
 						<!-- cycle 1 started-->
 
-						<img class="img-fluid" id="dnastrandsa" src="images/dnastrands.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsa" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsb" src="images/dnastrandsb.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsb" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
 						<!-- dna primer added-->
-						<img class="img-fluid" id="dnaprimer" src="images/dnaprimer.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimer" src="images/Forward_primer.png" style="display:none;"
 							alt="dnaprimer">
-						<img class="img-fluid" id="dnaprimerb" src="images/dnaprimerb.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerb" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
+
+							<img class="img-fluid" id="taqpoly" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpoly">
+
+							<img class="img-fluid" id="taqpolyr" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpolyr">
+
+							<img class="img-fluid" id="cycle1dna" src="images/DNA_strands_formed_after_cycle_1_of_PCR.png" style="display:none;"
+							alt="cycle1">
+
+							<img class="img-fluid" id="dnastrandsac21" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc21" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
+
+							<img class="img-fluid" id="dnastrandsac22" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc22" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
+
+
+							<img class="img-fluid" id="dnaprimerc2f1" src="images/Forward_primer.png" style="display:none;"
+							alt="dnaprimer">
+						<img class="img-fluid" id="dnaprimerbc2r1" src="images/Reverse_primer.png" style="display:none;"
+							alt="dnaprimerb">
+
+							<img class="img-fluid" id="dnaprimerc2f2" src="images/Forward_primer.png" style="display:none;"
+							alt="dnaprimer">
+						<img class="img-fluid" id="dnaprimerbc2r2" src="images/Reverse_primer.png" style="display:none;"
+							alt="dnaprimerb">
+
+
+							<img class="img-fluid" id="taqpolyc21" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpoly">
+
+							<img class="img-fluid" id="taqpolyc21r" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpolyr">
+
+
+
+							<img class="img-fluid" id="taqpolyc22" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpoly">
+
+							<img class="img-fluid" id="taqpolyc22r" src="images/Taq_polymerase.png" style="display:none;"
+							alt="taqpolyr">
+
+
 						<!-- dna extension added-->
 						<!--img class="img-fluid" id="dnaprimerext" src="images/dnaexta.png" style="display:none;"
 							alt="dnaprimerext">
 						<img class="img-fluid" id="dnaprimerextb" src="images/dnaextb.png" style="display:none;"
 							alt="dnaprimerextb"-->
 						<!--cycle 2 started -->
-						<img class="img-fluid" id="c2dna" src="images/c2dna.png" alt="c2dna">
+						<!-- <img class="img-fluid" id="c2dna" src="images/c2dna.png" alt="c2dna">
 						<img class="img-fluid" id="c2dnaa" src="images/c2dnaa.png" alt="c2dnaa">
 
 						<img class="img-fluid" id="c2dnab" src="images/c2dnab.png" style="display:none;" alt="c2dnab">
@@ -346,7 +396,7 @@ Developer: Prakriti Dhang
 						<img class="img-fluid" id="dnac2extb" src="images/c2dnaextb.png" style="display:none;"
 							alt="dnastrandsc2ext">
 						<img class="img-fluid" id="c3" src="images/c3.png" style="display:none;" alt="cycle3">
-
+ -->
 
 						<canvas id="den3min"
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer;"></canvas>
