@@ -197,7 +197,7 @@ Developer: Prakriti Dhang
 #dnastrandsa{
     position: absolute;
     width:35%;
-    top:31%; /* 35 */
+    top:31%; /* 31 */
     left:60.1%;
 }
 
@@ -212,138 +212,139 @@ Developer: Prakriti Dhang
 
 
  
-#dnaprimerb{ /*  up  */
+#dnaprimerb{ /*  up -reverse primer  */
     position: absolute;
-    width:5.4%;
-    top:35%; /* 35 */
-    left:62.8%;
+    width:9.7%;
+    top:36%; /* 36 */
+    left:76.8%;
    
     
 }
 
-#dnaprimer{ /*  down  */
+#dnaprimer{ /*  down -forward primer  */
     position: absolute;
-    width:5.4%;
+    width:10.5%;
     top:40%; /* 40 */
-    left:62.9%;
+    left:62.5%;
    
     
 }
 
-#dnaprimerext{  /*  down  */
+#taqpoly{
+    position: absolute;
+    width:2.5%;
+    top:25.5%; /*25.5 */
+    left:76%;
+}
+
+#taqpolyr{
+    position: absolute;
+    width:2.5%;
+    top:45.3%; /* 45.3 */
+    left:70.5%;
+    rotate: 180deg;
+}
+
+
+#cycle1dna{
+    position: absolute;
+    width:30%;
+    top:20%; /* 31 */
+    left:60.1%;
+}
+
+
+#dnastrandsac21{
     position: absolute;
     width:35%;
-    top:47%; /* 30 */
-    left:60%;
-   
-    
+    top:20%; /* 20 */
+    left:60.1%;
 }
 
-#dnaprimerextb{  /*  up  */
+#dnastrandsbc21{
     position: absolute;
     width:35%;
-    top:23%;  /* 35 */
-    left:60%;
-   
-    
+    top:24%; /* 24 */
+    left:60.1%;
 }
 
 
-
-#c2dna{  /*bottom */
+#dnastrandsac22{
     position: absolute;
-    width:20.8%;
-    top:37%; /* 37 */
-    left: 62.3%;   /*primer*/
-    display:none;
+    width:35%;
+    top:46%; /* 46 */
+    left:60.1%;
 }
 
-#c2dnaa{ /*bottom */
+#dnastrandsbc22{
     position: absolute;
-    width:27.5%;
-    top:40%;  /* 40 */
-    left:60%;
-    display:none;
-    
+    width:35%;
+    top:50%; /* 50 */
+    left:60.1%;
 }
 
-#c2dnab{ /*top */
+#dnaprimerc2f1{ /*forward down dna */
     position: absolute;
-    width:20.8%;
-    top:23%; /* 23 */
-    left: 62.3%;  /*primer*/
-   
+    width:10.5%;
+    top:18%; /* 18-21*/
+    left:62.5%;
 }
-
-#c2dnac{ /*top */
+#dnaprimerbc2r1{  /*reverse  up dna*/
     position: absolute;
-    width:27.5%;
-    top:20%;  /* 20 */
-    left:59.99%;
-    
+    width:9.7%;
+    top:15%; /* 15- 13*/
+    left:76.7%;
 }
 
-
-#dnaprimerc2{
+#dnaprimerc2f2{ /*forward  down dna*/
     position: absolute;
-    width:4.4%;
-    top:47%; /* 47 */
-    left:61.1%;
-   
+    width:10.5%;
+    top:58%; /* 58-67*/
+    left:62.5%;
 }
-
-#dnaprimer12c2{
+#dnaprimerbc2r2{ /*reverse  up dna*/
     position: absolute;
-    width:4.4%;
-    top:27%; /* 27 */
-    left:77.7%;
-   
+    width:9.7%;
+    top:55%; /* 55-50.2 */
+    left:76.7%;
 }
 
 
-#dnaprimerc2b{
+#taqpolyc21{
     position: absolute;
-    width:4.4%;
-    top:23%; /* 23 */
-    left:63.3%;
-   
+    width:2.5%;
+    top:13.5%; /*13.5 */
+    left:76%;
 }
 
-#dnaprimer22c2b{
+#taqpolyc21r{
     position: absolute;
-    width:4.4%;
-    top:40%; /* 40 */
-    left:77.8%;
+    width:2.5%;
+    top:18.5%; /* 18.3 */
+    left:70.5%;
+    rotate: 180deg;
 }
 
-#dnastrandsac2ext{
+
+#taqpolyc22{
     position: absolute;
-    width:25%;
-    top:47%; /* 47 */
-    left:65.5%;
+    width:2.5%;
+    top:51%; /*51 */
+    left:76%;
 }
 
-#dnastrandsbc2ext{
+#taqpolyc22r{
     position: absolute;
-    width:22%;
-    top:23.3%; /* 23.3 */
-    left:67.5%;
+    width:2.5%;
+    top:65%; /* 65 */
+    left:70.5%;
+    rotate: 180deg;
 }
 
-#dnac2exta{
-    position: absolute;
-    width:17%;
-    top:40%; /* 47 */
-    left:61.1%;
-}
 
-#dnac2extb{
-    position: absolute;
-    width:17%;
-    top:27%; /* 27 */
-    left:61.1%;
-}
 
+
+/*  */
 #den3min{
     position: absolute;
     width:2.5%;
