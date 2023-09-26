@@ -135,6 +135,30 @@ Developer: Prakriti Dhang
    
 }
 
+#thermo{
+    position: absolute;
+    width:5%;
+    top:5.6%;
+    left:38%;  
+}
+
+
+#thermometer{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
+    left:40.1%;  
+}
+
+#thermometerborder{
+    position: absolute;
+    width:4.8%;
+    height:40.3%;
+    top:6.1%;
+    left:38.2%;  
+}
+
 #ice{
     position: absolute;
     width:10%;
@@ -246,13 +270,14 @@ Developer: Prakriti Dhang
 }
 
 
-#cycle1dna{
+/* #cycle1dna{
     position: absolute;
     width:30%;
-    top:20%; /* 31 */
+    top:20%; 
     left:60.1%;
-}
+} */
 
+/* Cycle 2*/
 
 #dnastrandsac21{
     position: absolute;
@@ -341,10 +366,69 @@ Developer: Prakriti Dhang
     rotate: 180deg;
 }
 
+/* Cycle 3*/
+
+#dnastrandsac31{
+    position: absolute;
+    width:35%;
+    top:8%; /* 8 */
+    left:60.1%;
+}
+
+#dnastrandsbc31{
+    position: absolute;
+    width:35%;
+    top:12%; /* 12 */
+    left:60.1%;
+}
+
+
+#dnastrandsac32{
+    position: absolute;
+    width:35%;
+    top:21%; /* 21 */
+    left:60.1%;
+}
+
+#dnastrandsbc32{
+    position: absolute;
+    width:35%;
+    top:24.2%; /* 24.2*/
+    left:60.1%;
+}
+
+#dnastrandsac31t{
+    position: absolute;
+    width:35%;
+    top:46.5%; /* 46.5 */
+    left:60.1%;
+}
+
+#dnastrandsbc31b{
+    position: absolute;
+    width:35%;
+    top:50%; /* 50 */
+    left:60.1%;
+}
+
+
+#dnastrandsac32t{
+    position: absolute;
+    width:35%;
+    top:67%; /* 67 */
+    left:60.1%;
+}
+
+#dnastrandsbc32b{
+    position: absolute;
+    width:35%;
+    top:70%; /* 70 */
+    left:60.1%;
+}
 
 
 
-/*  */
+/*  Thermal machine highlighting*/
 #den3min{
     position: absolute;
     width:2.5%;

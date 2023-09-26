@@ -18,6 +18,7 @@ function restartexp(){
 
 var thawcomponents = document.getElementById("step1");
 function thawcomp() {
+  document.getElementById("step2").disabled = false;
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 0) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = "The components of the PCR reaction that are thawed and centrifuged:  ";
@@ -245,6 +246,8 @@ function runpcr() {
 
   function separatedna() {
    
+
+    increasetemp94();
     
     var dnaa = document.getElementById("dnastrandsa");
 
@@ -290,6 +293,7 @@ function runpcr() {
 
 
   function primerdna() {
+    decreasetemp57();
 
     document.getElementById("den3min").style.opacity = "0%";
     document.getElementById("ann2min").style.background = "#ADFFF5 ";
@@ -343,6 +347,7 @@ function runpcr() {
   }
 
   function primerextdnaa() {
+    increasetemp72();
     document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
@@ -373,12 +378,12 @@ function runpcr() {
    
     /* document.getElementById("c2dnab").style.display = "block";
     document.getElementById("c2dnac").style.display = "block"; */
-    setTimeout(cycle1, 3000);
+    setTimeout(cycle2, 3000);
     //setTimeout(c2dnaseparateb, 5000);
 
   }
 
-  function cycle1() {
+  function cycle2() {
     //document.getElementById("cycle1dna").style.display = "block";
     document.getElementById("dnastrandsac21").style.display = "block";
     document.getElementById("dnastrandsbc21").style.display = "block";
@@ -390,21 +395,21 @@ function runpcr() {
     document.getElementById("dnastrandsb").style.display = "none";
     document.getElementById("dnaprimerb").style.display = "none";
     document.getElementById("taqpolyr").style.display = "none";
-    setTimeout(gotostep2, 3000);
+    setTimeout(gotostep2, 2000);
   }
 
   function gotostep2(){
-
+    //cleartemp();
     document.getElementById("goto2").style.background = "#ADFFF5 ";
     document.getElementById("goto2").style.opacity = "50%";
     document.getElementById("ext1min").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Go to step 2";
-   /*  document.getElementById("pcrstp1").style.display = "none";
+    /*  document.getElementById("pcrstp1").style.display = "none";
     document.getElementById("pcrstp2").style.display = "none";
-    document.getElementById("pcrstp3").style.display = "none";  */
-    //document.getElementById("stepshead").style.display = "none";
-     setTimeout(c2dnaseparatea, 3000);
-    setTimeout(c2dnaseparateb, 3000); 
+    document.getElementById("pcrstp3").style.display = "none";   */
+   
+     setTimeout(c2dnaseparatea, 4000);
+    setTimeout(c2dnaseparateb, 4000); 
   }
 
 
@@ -414,6 +419,7 @@ function runpcr() {
 
 
   function c2dnaseparateb() {
+    increasec2temp94();
     document.getElementById("pcrstp1").style.display = "block";
     //document.getElementById("stepsheadc21").style.display = "block";
     //document.getElementById("pcrsteps").style.display = "none";
@@ -476,6 +482,7 @@ function runpcr() {
   }
 
   function c2dnaprimer1() {
+    decreasec2temp57();
     document.getElementById("dnaprimerc2f1").style.display="block";
     document.getElementById("dnaprimerbc2r1").style.display="block";
     document.getElementById("pcrstp2").style.display = "block";
@@ -496,7 +503,7 @@ function runpcr() {
        if (dnaprifc2topp == 21) {
  
          clearInterval(imgdnac2prifc21);
-        // setTimeout(c2dnaext, 5000);
+         setTimeout(c2dnaext, 3000);
 
        } else {
  
@@ -589,21 +596,23 @@ function runpcr() {
   }
 
 
-  /*function c2dnaext() {
+  function c2dnaext() {
+    increasec2temp72();
     document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("ann2min").style.display = "none";
     // document.getElementById("stepsheadc23").style.display = "block";
     document.getElementById("ext1min").style.display = "block";
     //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
-    document.getElementById("dnastrandsac2ext").style.display = "block";
-    document.getElementById("dnastrandsbc2ext").style.display = "block";
-    document.getElementById("dnac2exta").style.display = "block";
-    document.getElementById("dnac2extb").style.display = "block";
+    document.getElementById("taqpolyc21").style.display="block";
+    document.getElementById("taqpolyc21r").style.display="block";
+    document.getElementById("taqpolyc22").style.display="block";
+    document.getElementById("taqpolyc22r").style.display="block";
+
     setTimeout(cycle3, 5000);
 
   }
-  function cycle3() {
+function cycle3() {
     document.getElementById("pcrstp1").style.display = "block";
     document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("pcrstp3").style.display = "block";
@@ -611,27 +620,249 @@ function runpcr() {
     //document.getElementById("pcrsteps").style.display = "block";
     document.getElementById("cyclenum").innerHTML = "Cycle 3";
     document.getElementById("ext1min").style.display = "none";
-    //document.getElementById("stepshead").style.display = "none";
-    document.getElementById("c3").style.display = "block";
-    document.getElementById("c2dna").style.visibility = "hidden";
-    document.getElementById("c2dnaa").style.visibility = "hidden";
-    document.getElementById("c2dnab").style.display = "none";
-    document.getElementById("c2dnac").style.display = "none";
-    document.getElementById("dnastrandsac2ext").style.display = "none";
-    document.getElementById("dnastrandsbc2ext").style.display = "none";
-    document.getElementById("dnac2exta").style.display = "none";
-    document.getElementById("dnac2extb").style.display = "none";
-    document.getElementById("dnaprimerc2").style.display = "none";
-    document.getElementById("dnaprimer12c2").style.display = "none";
-    document.getElementById("dnaprimerc2b").style.display = "none";
-    document.getElementById("dnaprimer22c2b").style.display = "none";
-    document.getElementById("dnaprimerb").style.display = "none";
-    document.getElementById("dnaprimer").style.display = "none";
-    document.getElementById("dnastrandsa").style.display = "none";
-    document.getElementById("dnastrandsb").style.display = "none";
-
+ 
+    document.getElementById("dnastrandsac31").style.display="block";
+    document.getElementById("dnastrandsbc31").style.display="block";
+    document.getElementById("dnastrandsac32").style.display="block";
+    document.getElementById("dnastrandsbc32").style.display="block";
+    document.getElementById("dnastrandsac31t").style.display="block";
+    document.getElementById("dnastrandsbc31b").style.display="block";
+    document.getElementById("dnastrandsac32t").style.display="block";
+    document.getElementById("dnastrandsbc32b").style.display="block";
  
 
-  } */
+
+    document.getElementById("dnaprimerc2f2").style.display="none";
+    document.getElementById("dnaprimerbc2r2").style.display="none";
+    document.getElementById("dnaprimerc2f1").style.display="none";
+    document.getElementById("dnaprimerbc2r1").style.display="none";
+    document.getElementById("taqpolyc21").style.display="none";
+    document.getElementById("taqpolyc21r").style.display="none";
+    document.getElementById("taqpolyc22").style.display="none";
+    document.getElementById("taqpolyc22r").style.display="none";
+    document.getElementById("dnastrandsac21").style.display = "none";
+    document.getElementById("dnastrandsbc21").style.display = "none";
+    document.getElementById("dnastrandsac22").style.display = "none";
+    document.getElementById("dnastrandsbc22").style.display = "none";
+  } 
+
+}
+
+
+function increasetemp94(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 150 ;
+  var speed=3;
+
+  function drawLine(){
+  
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  ctx.moveTo(0, posY); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+function moveLine () {
+posY += speed;
+
+if (posY < 0 || posY > canvas.height) {
+  speed = speed * -1;
+}
+}
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+
+}
+
+
+function decreasetemp57(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0 ;
+  var speed=3;
+
+  function drawLine(){
+  ctx.clearRect(0,0,canvas.width, 57);
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  //ctx.moveTo(0, 57); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+function moveLine () {
+posY += speed;
+
+if (posY > 0 || posY < canvas.height) {
+  speed = speed * -1;
+}
+}
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+} 
+requestAnimationFrame(loop);
+
+}
+
+function increasetemp72(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 30 ;
+  //var speed=3;
+
+  function drawLine(){
+  
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  ctx.moveTo(0, posY); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+/* function moveLine () {
+posY += speed;
+
+if (posY < 0 || posY > 40) {
+  speed = speed * -1;
+}
+}*/
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+//moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+}
+
+function increasec2temp94(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0 ;
+  //var speed=3;
+
+  function drawLine(){
+  
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  ctx.moveTo(0, posY); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+/* function moveLine () {
+posY += speed;
+
+if (posY < 0 || posY > 40) {
+  speed = speed * -1;
+}
+}*/
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+//moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+
+}
+
+function decreasec2temp57(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0 ;
+  var speed=3;
+
+  function drawLine(){
+  ctx.clearRect(0,0,canvas.width, 57);
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  //ctx.moveTo(0, 57); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+function moveLine () {
+posY += speed;
+
+if (posY > 0 || posY < canvas.height) {
+  speed = speed * -1;
+}
+}
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+} 
+requestAnimationFrame(loop);
+
+}
+
+function increasec2temp72(){
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 30 ;
+  //var speed=3;
+
+  function drawLine(){
+  
+  ctx.strokeStyle = 'red';
+  ctx.lineWidth = 600;
+  ctx.beginPath();
+  ctx.moveTo(0, posY); /*  0-130*/
+  ctx.lineTo(0, 180);
+  ctx.stroke();
+}
+
+/* function moveLine () {
+posY += speed;
+
+if (posY < 0 || posY > 40) {
+  speed = speed * -1;
+}
+}*/
+
+function loop() {
+// clear old frame;
+ //ctx.clearRect(0,0,canvas.width, 57);
+
+//moveLine();
+drawLine();
+cancelani=  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
 
 }
