@@ -3,9 +3,9 @@
 
 Steps | Action  | Procedure Details| 
 :--|:--|:--|
-<img src="images/Thawing_on_ice.png" width="30%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
-<img src="images/Components.png" width="50%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
-<img src="images/Thermal_cycler.jpg" width="50%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
+<img src="images/Thawing_on_ice.png" width="40%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
+<img src="images/Components.png" width="70%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
+<img src="images/Thermal_cycler.jpg" width="60%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
 
 
 
