@@ -89,11 +89,11 @@ Developer: Prakriti Dhang
 							PCR cycling
 							reactions are:</p>
 						<div class="d-flex gap-2 d-grid flex-row">
-							<button id="pcrstp1" type="button" class="btn btn-primary  rounded-2 fs-5 mb-2"
+							<button id="pcrstp1" type="button" class="btn btn-primary  rounded-2 fs-6 mb-2"
 								style="cursor: pointer; display:none;"> Denaturation</button>
-							<button id="pcrstp2" type="button" class="btn btn-success rounded-2 fs-5 mb-2"
+							<button id="pcrstp2" type="button" class="btn btn-success rounded-2 fs-6 mb-2"
 								style="cursor: pointer; display:none;"> Annealing</button>
-							<button id="pcrstp3" type="button" class="btn btn-warning  rounded-2 fs-5 mb-2"
+							<button id="pcrstp3" type="button" class="btn btn-warning  rounded-2 fs-6 mb-2"
 								style="cursor: pointer; display:none;"> Extension</button>
 						</div>
 						<!---p class="fs-5 fw-bold card-text"  id="stepshead" ></p>
@@ -118,20 +118,19 @@ Developer: Prakriti Dhang
 							<tr>
 								<td colspan="2">
 									<button id="step0" type="button"
-										class="btn btn-success border border-1  rounded-3 fs-5 m-2"
+										class="btn btn-success border border-1  rounded-3 fs-6 m-2"
 										style="cursor: pointer; " data-bs-toggle="modal"
 										data-bs-target="#exampleModal">Click to Start the Experiment</button>
 
 										<button id="steprs" type="button"
-										class="btn btn-warning border border-1  rounded-3 fs-5 m-2"
-										style="cursor: pointer; float:right " data-bs-toggle="modal"
-										data-bs-target="#exampleModal" onclick="restartexp()">Re-Do the Experiment</button>
+										class="btn btn-warning border border-1  rounded-3 fs-6 m-2"
+										style="cursor: pointer; float:right "  onclick="restartexp()">Re-Do the Experiment</button>
 								</td>
 							</tr>
 							<tr>
-								<td class="fs-5">Step 1</td>
+								<td class="fs-6">Step 1</td>
 								<td>
-									<select id="step1" class="form-select m-2 fs-5 " aria-label="Default select example"
+									<select id="step1" class="form-select m-2 fs-6 " aria-label="Default select example"
 										onchange="thawcomp()" disabled>
 										<option value="0" selected>Choose the PCR reaction components for thawing on
 											ice</option>
@@ -147,40 +146,40 @@ Developer: Prakriti Dhang
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="2" class="fs-5">Step 2</td>
+								<td rowspan="2" class="fs-6">Step 2</td>
 								<td>
-									<div id="opta" class="form-check form-check-inline fs-5">
+									<div id="opta" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt1" disabled>
 										<label class="form-check-label" for="opt1">
 											Forward Primers
 										</label>
 									</div>
-									<div id="optb" class="form-check form-check-inline fs-5">
+									<div id="optb" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt2" disabled>
 										<label class="form-check-label" for="opt2">
 											Reverse Primers
 										</label>
 									</div>
 
-									<div id="optc" class="form-check form-check-inline fs-5">
+									<div id="optc" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt3" disabled>
 										<label class="form-check-label" for="opt3">
 											Template DNA
 										</label>
 									</div>
-									<div id="optd" class="form-check form-check-inline fs-5">
+									<div id="optd" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt4" disabled>
 										<label class="form-check-label" for="opt4">
 											dNTPs
 										</label>
 									</div>
-									<div id="opte" class="form-check form-check-inline fs-5">
+									<div id="opte" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt5" disabled>
 										<label class="form-check-label" for="opt5">
 											Mg<sup>2+</sup>ions
 										</label>
 									</div>
-									<div id="optf" class="form-check form-check-inline fs-5">
+									<div id="optf" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt6" disabled>
 										<label class="form-check-label" for="opt6">
 											Taq. polymerase
@@ -191,23 +190,23 @@ Developer: Prakriti Dhang
 							</tr>
 							<tr>
 								<td><button id="step2" type="button"
-										class="btn btn-warning border border-2 border-success rounded-3 fs-5"
-										onclick="prepmix()" style="cursor: pointer;">Preparation of PCR mixture</button>
+										class="btn btn-warning border border-2 border-success rounded-3 fs-6"
+										onclick="prepmix()" style="cursor: pointer;" disabled>Preparation of PCR mixture</button>
 								</td>
 							</tr>
 
 							<tr>
-								<td class="fs-5">Step 3</td>
+								<td class="fs-6">Step 3</td>
 								<td>
 									<button id="step3" type="button"
-										class="btn btn-primary border border-1 border-info rounded-2 fs-5 m-2"
+										class="btn btn-primary border border-1 border-info rounded-2 fs-6 m-2"
 										onclick="PCRincub()" style="cursor: pointer;" disabled>Incubation of the PCR
 										reaction mixture in a
 										thermal
 										cycler</button>
 
 									<button type="button" id="opentc"
-										class="open btn btn-warning border border-2 border-success rounded-1 fs-5 m-2"
+										class="open btn btn-warning border border-2 border-success rounded-1 fs-6 m-2"
 										onclick="openthermalcycle()"
 										style="cursor: pointer;display: none;">Open</button>
 								</td>
@@ -286,6 +285,17 @@ Developer: Prakriti Dhang
 						<img class="img-fluid" id="icebucket" src="images/ice_bucket.png"
 							style="cursor: pointer; display: block; " alt="icebucket">
 
+							<img class="img-fluid" id="thermo" src="images/thermo.png"
+							style="cursor: pointer; display: none; " alt="thermometer">
+
+							<canvas id="thermometer"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; display: none;"></canvas>
+
+							<canvas id="thermometerborder"
+							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;"></canvas>
+
+
+
 						<img class="img-fluid" id="ice" src="images/ices.png" style="cursor: pointer; display:none; "
 							alt="ices">
 
@@ -300,7 +310,7 @@ Developer: Prakriti Dhang
 						<button type="button" class="btn border border-2 border-dark"  id="run"></button>-->
 
 						<canvas id="run"
-							style="border:1px solid #000000; border-radius: 5px; cursor: pointer; display: block;"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; display: none;"
 							onclick="runpcr()"></canvas>
 
 						<!-- cycle 1 started-->
@@ -362,41 +372,29 @@ Developer: Prakriti Dhang
 							alt="taqpolyr">
 
 
-						<!-- dna extension added-->
-						<!--img class="img-fluid" id="dnaprimerext" src="images/dnaexta.png" style="display:none;"
-							alt="dnaprimerext">
-						<img class="img-fluid" id="dnaprimerextb" src="images/dnaextb.png" style="display:none;"
-							alt="dnaprimerextb"-->
-						<!--cycle 2 started -->
-						<!-- <img class="img-fluid" id="c2dna" src="images/c2dna.png" alt="c2dna">
-						<img class="img-fluid" id="c2dnaa" src="images/c2dnaa.png" alt="c2dnaa">
 
-						<img class="img-fluid" id="c2dnab" src="images/c2dnab.png" style="display:none;" alt="c2dnab">
-						<img class="img-fluid" id="c2dnac" src="images/c2dnac.png" style="display:none;" alt="c2dnac">
+							<!-- Cycle 3-->
 
-						<img class="img-fluid" id="dnaprimerc2" src="images/dnaprimer.png" style="display:none;"
-							alt="dnaprimerc2">
-						<img class="img-fluid" id="dnaprimer12c2" src="images/dnaprimer.png" style="display:none;"
-							alt="dnaprimer12c2">
-
-						<img class="img-fluid" id="dnaprimerc2b" src="images/dnaprimerb.png" style="display:none;"
-							alt="dnaprimerbc2">
-						<img class="img-fluid" id="dnaprimer22c2b" src="images/dnaprimerb.png" style="display:none;"
-							alt="dnaprimerbc2">
-
-						<img class="img-fluid" id="dnastrandsac2ext" src="images/dnastrands.png" style="display:none;"
-							alt="dnastrandsc2ext">
-
-						<img class="img-fluid" id="dnastrandsbc2ext" src="images/c2dnasta.png" style="display:none;"
+							<img class="img-fluid" id="dnastrandsac31" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc31" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-						<img class="img-fluid" id="dnac2exta" src="images/c2dnaexta.png" style="display:none;"
-							alt="dnastrandsc2ext">
+							<img class="img-fluid" id="dnastrandsac32" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc32" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
 
-						<img class="img-fluid" id="dnac2extb" src="images/c2dnaextb.png" style="display:none;"
-							alt="dnastrandsc2ext">
-						<img class="img-fluid" id="c3" src="images/c3.png" style="display:none;" alt="cycle3">
- -->
+							<img class="img-fluid" id="dnastrandsac31t" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc31b" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
+
+							<img class="img-fluid" id="dnastrandsac32t" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc32b" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
+						
 
 						<canvas id="den3min"
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer;"></canvas>

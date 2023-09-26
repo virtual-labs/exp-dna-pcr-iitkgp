@@ -12,12 +12,13 @@ function start() {
   //alert("A desktop or laptop is the preferred choice for an enhanced viewing experience.");
 }
 
-function restartexp(){
- location.reload();
+function restartexp() {
+  location.reload();
 }
 
 var thawcomponents = document.getElementById("step1");
 function thawcomp() {
+  document.getElementById("step2").disabled = false;
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 0) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = "The components of the PCR reaction that are thawed and centrifuged:  ";
@@ -49,7 +50,7 @@ function thawcomp() {
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 5) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket" ;
+    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     document.getElementById("opt4").disabled = false;
     document.getElementById("tube4").style.display = "block";
   }
@@ -59,47 +60,47 @@ function thawcomp() {
     document.getElementById("opt5").disabled = false;
     document.getElementById("tube5").style.display = "block";
   }
-  
-  if((thawcomponents.options[thawcomponents.selectedIndex].value == 7) || (thawcomponents.options[thawcomponents.selectedIndex].value == 8) ){
-  document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
+
+  if ((thawcomponents.options[thawcomponents.selectedIndex].value == 7) || (thawcomponents.options[thawcomponents.selectedIndex].value == 8)) {
+    document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " is not a correct component";
-}
+  }
 }
 
 
 function prepmix() {
-  if((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked) ){
-  // alert("correct");
-   document.getElementById("tube").style.display = "block";
-   document.getElementById("step2").disabled = true;
-   document.getElementById("thaw").innerHTML = "";
-  document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
-  document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
-  tubeimg = document.getElementById('tube');
-  document.getElementById("step3").disabled = false;
-  document.getElementById("tube1").style.display = "none";
-  document.getElementById("tube2").style.display = "none";
-  document.getElementById("tube3").style.display = "none";
-  document.getElementById("tube4").style.display = "none";
-  document.getElementById("tube5").style.display = "none";
-  document.getElementById("tube6").style.display = "none";
-  document.getElementById("icebucket").style.display = "none";
+  if ((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked)) {
+    // alert("correct");
+    document.getElementById("tube").style.display = "block";
+    document.getElementById("step2").disabled = true;
+    document.getElementById("thaw").innerHTML = "";
+    document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
+    document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
+    tubeimg = document.getElementById('tube');
+    document.getElementById("step3").disabled = false;
+    document.getElementById("tube1").style.display = "none";
+    document.getElementById("tube2").style.display = "none";
+    document.getElementById("tube3").style.display = "none";
+    document.getElementById("tube4").style.display = "none";
+    document.getElementById("tube5").style.display = "none";
+    document.getElementById("tube6").style.display = "none";
+    document.getElementById("icebucket").style.display = "none";
 
 
 
-  //
-  tubeimg.removeEventListener('click', tubeinsert);
-}
-  else if((document.getElementById('opt1').checked== false) || (document.getElementById('opt2').checked== false) || (document.getElementById('opt3').checked== false) || (document.getElementById('opt4').checked== false) || (document.getElementById('opt5').checked== false) || (document.getElementById('opt6').checked== false)){
+    //
+    tubeimg.removeEventListener('click', tubeinsert);
+  }
+  else if ((document.getElementById('opt1').checked == false) || (document.getElementById('opt2').checked == false) || (document.getElementById('opt3').checked == false) || (document.getElementById('opt4').checked == false) || (document.getElementById('opt5').checked == false) || (document.getElementById('opt6').checked == false)) {
     alert("One or more component(s) is(are) required for preparing the mixture.");
     document.getElementById("thaw").innerHTML = "";
-  document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
-  document.getElementById("prep").innerHTML = "One or more component(s) is(are) required for preparing the mixture.";
+    document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
+    document.getElementById("prep").innerHTML = "One or more component(s) is(are) required for preparing the mixture.";
   }
-  
- // document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
- 
- 
+
+  // document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
+
+
 }
 
 
@@ -225,10 +226,10 @@ var imgdnapria = null;
 var imgdnaprib = null;
 var imgdnac2sepa = null;
 var imgdnac2sepb = null;
-var imgdnac2prifc21 =null;
-var imgdnac2prirc21 =null;
-var imgdnac2prifc22 =null;
-var imgdnac2prirc22 =null;
+var imgdnac2prifc21 = null;
+var imgdnac2prirc21 = null;
+var imgdnac2prifc22 = null;
+var imgdnac2prirc22 = null;
 
 function runpcr() {
   document.getElementById("dnastrandsa").style.display = "block";
@@ -240,12 +241,19 @@ function runpcr() {
   document.getElementById("den3min").style.opacity = "50%";
   document.getElementById("cyclenum").innerHTML = "Cycle 1";
   document.getElementById("stepcycle").style.display = "block";
+  document.getElementById("thermo").style.display = "block";
+  document.getElementById("thermometer").style.display = "block";
+  document.getElementById("thermometerborder").style.display = "block";
+
+
   setTimeout(separatedna, 2000);
   setTimeout(separatednb, 2000);
 
   function separatedna() {
-   
-    
+
+
+    increasetemp94();
+
     var dnaa = document.getElementById("dnastrandsa");
 
     var dnatopp = 35; //initial  position
@@ -266,7 +274,7 @@ function runpcr() {
   }
 
   function separatednb() {
-    
+
 
 
     var dnab = document.getElementById("dnastrandsb");
@@ -290,6 +298,7 @@ function runpcr() {
 
 
   function primerdna() {
+    decreasetemp57();
 
     document.getElementById("den3min").style.opacity = "0%";
     document.getElementById("ann2min").style.background = "#ADFFF5 ";
@@ -343,6 +352,7 @@ function runpcr() {
   }
 
   function primerextdnaa() {
+    increasetemp72();
     document.getElementById("ann2min").style.display = "none";
     document.getElementById("ext1min").style.background = "#ADFFF5 ";
     document.getElementById("ext1min").style.opacity = "50%";
@@ -351,8 +361,8 @@ function runpcr() {
     document.getElementById("dnastrandsa").style.display = "block";
     document.getElementById("dnaprimer").style.display = "block";
     document.getElementById("taqpoly").style.display = "block";
-   /*  document.getElementById("c2dna").style.display = "block";
-    document.getElementById("c2dnaa").style.display = "block"; */
+    /*  document.getElementById("c2dna").style.display = "block";
+     document.getElementById("c2dnaa").style.display = "block"; */
     //setTimeout(gotostep2, 2000);
     //setTimeout(c2dnaseparatea, 5000);
 
@@ -370,15 +380,15 @@ function runpcr() {
     document.getElementById("dnastrandsb").style.display = "block";
     document.getElementById("dnaprimerb").style.display = "block";
     document.getElementById("taqpolyr").style.display = "block";
-   
+
     /* document.getElementById("c2dnab").style.display = "block";
     document.getElementById("c2dnac").style.display = "block"; */
-    setTimeout(cycle1, 3000);
+    setTimeout(cycle2, 3000);
     //setTimeout(c2dnaseparateb, 5000);
 
   }
 
-  function cycle1() {
+  function cycle2() {
     //document.getElementById("cycle1dna").style.display = "block";
     document.getElementById("dnastrandsac21").style.display = "block";
     document.getElementById("dnastrandsbc21").style.display = "block";
@@ -390,30 +400,31 @@ function runpcr() {
     document.getElementById("dnastrandsb").style.display = "none";
     document.getElementById("dnaprimerb").style.display = "none";
     document.getElementById("taqpolyr").style.display = "none";
-    setTimeout(gotostep2, 3000);
+    setTimeout(gotostep2, 2000);
   }
 
-  function gotostep2(){
-
+  function gotostep2() {
+    cleartemp();
     document.getElementById("goto2").style.background = "#ADFFF5 ";
     document.getElementById("goto2").style.opacity = "50%";
     document.getElementById("ext1min").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Go to step 2";
-   /*  document.getElementById("pcrstp1").style.display = "none";
+    /*  document.getElementById("pcrstp1").style.display = "none";
     document.getElementById("pcrstp2").style.display = "none";
-    document.getElementById("pcrstp3").style.display = "none";  */
-    //document.getElementById("stepshead").style.display = "none";
-     setTimeout(c2dnaseparatea, 3000);
-    setTimeout(c2dnaseparateb, 3000); 
+    document.getElementById("pcrstp3").style.display = "none";   */
+
+    setTimeout(c2dnaseparatea, 4000);
+    setTimeout(c2dnaseparateb, 4000);
   }
 
 
 
 
- //Cycle 2 starts
+  //Cycle 2 starts
 
 
   function c2dnaseparateb() {
+    increasec2temp94();
     document.getElementById("pcrstp1").style.display = "block";
     //document.getElementById("stepsheadc21").style.display = "block";
     //document.getElementById("pcrsteps").style.display = "none";
@@ -454,9 +465,9 @@ function runpcr() {
 
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
     var dnac2sep = document.getElementById("dnastrandsbc22");
-   // dnac2sep.style.top = 30 + '%';
-    
-  
+    // dnac2sep.style.top = 30 + '%';
+
+
 
     var dnasepatopp = 50; //initial  position
     clearInterval(imgdnac2sepa);
@@ -472,12 +483,13 @@ function runpcr() {
         dnac2sep.style.top = dnasepatopp + '%';
 
       }
-    } 
+    }
   }
 
   function c2dnaprimer1() {
-    document.getElementById("dnaprimerc2f1").style.display="block";
-    document.getElementById("dnaprimerbc2r1").style.display="block";
+    decreasec2temp57();
+    document.getElementById("dnaprimerc2f1").style.display = "block";
+    document.getElementById("dnaprimerbc2r1").style.display = "block";
     document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("den2min").style.display = "none";
     document.getElementById("ann2min").style.display = "block";
@@ -486,120 +498,122 @@ function runpcr() {
 
     var dnac2prif = document.getElementById("dnaprimerc2f1");
     // dnac2sep.style.top = 30 + '%';
-     
-   
- 
-     var dnaprifc2topp = 18; //initial  position
-     clearInterval(imgdnac2prifc21);
-     imgdnac2prifc21 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
-     function frame() {
-       if (dnaprifc2topp == 21) {
- 
-         clearInterval(imgdnac2prifc21);
-        // setTimeout(c2dnaext, 5000);
 
-       } else {
- 
+
+
+    var dnaprifc2topp = 18; //initial  position
+    clearInterval(imgdnac2prifc21);
+    imgdnac2prifc21 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
+    function frame() {
+      if (dnaprifc2topp == 21) {
+
+        clearInterval(imgdnac2prifc21);
+        setTimeout(c2dnaext, 3000);
+
+      } else {
+
         dnaprifc2topp++;
         dnac2prif.style.top = dnaprifc2topp + '%';
- 
-       }
-     } 
 
-     var dnac2prir = document.getElementById("dnaprimerbc2r1");
-     // dnac2sep.style.top = 30 + '%';
-      
-    
-  
-      var dnaprirc2topp = 15; //initial  position
-      clearInterval(imgdnac2prirc21);
-      imgdnac2prirc21 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
-      function frame1() {
-        if (dnaprirc2topp == 12) {
-  
-          clearInterval(imgdnac2prirc21);
-          
- 
-        } else {
-  
-          dnaprirc2topp--;
-         dnac2prir.style.top = dnaprirc2topp + '%';
-  
-        }
-      } 
- 
-   
+      }
+    }
+
+    var dnac2prir = document.getElementById("dnaprimerbc2r1");
+    // dnac2sep.style.top = 30 + '%';
+
+
+
+    var dnaprirc2topp = 15; //initial  position
+    clearInterval(imgdnac2prirc21);
+    imgdnac2prirc21 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
+    function frame1() {
+      if (dnaprirc2topp == 12) {
+
+        clearInterval(imgdnac2prirc21);
+
+
+      } else {
+
+        dnaprirc2topp--;
+        dnac2prir.style.top = dnaprirc2topp + '%';
+
+      }
+    }
+
+
   }
 
   function c2dnaprimer2() {
-    document.getElementById("dnaprimerc2f2").style.display="block";
-    document.getElementById("dnaprimerbc2r2").style.display="block";
+    document.getElementById("dnaprimerc2f2").style.display = "block";
+    document.getElementById("dnaprimerbc2r2").style.display = "block";
     document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("den2min").style.display = "none";
     document.getElementById("ann2min").style.display = "block";
     //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
-    
-   
+
+
     var dnac2prif2 = document.getElementById("dnaprimerc2f2");
     // dnac2sep.style.top = 30 + '%';
-     
-   
- 
-     var dnaprif2c2topp = 58; //initial  position
-     clearInterval(imgdnac2prifc22);
-     imgdnac2prifc22 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
-     function frame() {
-       if (dnaprif2c2topp == 67) {
- 
-         clearInterval(imgdnac2prifc22);
+
+
+
+    var dnaprif2c2topp = 58; //initial  position
+    clearInterval(imgdnac2prifc22);
+    imgdnac2prifc22 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
+    function frame() {
+      if (dnaprif2c2topp == 67) {
+
+        clearInterval(imgdnac2prifc22);
         // setTimeout(c2dnaext, 5000);
 
-       } else {
- 
+      } else {
+
         dnaprif2c2topp++;
         dnac2prif2.style.top = dnaprif2c2topp + '%';
- 
-       }
-     } 
 
-     var dnac2prir2 = document.getElementById("dnaprimerbc2r2");
-     // dnac2sep.style.top = 30 + '%';
-      
-    
-  
-      var dnaprir2c2topp = 55; //initial  position
-      clearInterval(imgdnac2prirc22);
-      imgdnac2prirc22 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
-      function frame1() {
-        if (dnaprir2c2topp == 50) {
-  
-          clearInterval(imgdnac2prirc22);
-          
- 
-        } else {
-  
-          dnaprir2c2topp--;
-         dnac2prir2.style.top = dnaprir2c2topp + '%';
-  
-        }
-      } 
- 
+      }
+    }
+
+    var dnac2prir2 = document.getElementById("dnaprimerbc2r2");
+    // dnac2sep.style.top = 30 + '%';
+
+
+
+    var dnaprir2c2topp = 55; //initial  position
+    clearInterval(imgdnac2prirc22);
+    imgdnac2prirc22 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
+    function frame1() {
+      if (dnaprir2c2topp == 50) {
+
+        clearInterval(imgdnac2prirc22);
+
+
+      } else {
+
+        dnaprir2c2topp--;
+        dnac2prir2.style.top = dnaprir2c2topp + '%';
+
+      }
+    }
+
 
   }
 
 
-  /*function c2dnaext() {
+  function c2dnaext() {
+    increasec2temp72();
     document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("ann2min").style.display = "none";
     // document.getElementById("stepsheadc23").style.display = "block";
     document.getElementById("ext1min").style.display = "block";
     //document.getElementById("stepshead").style.display = "none";
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
-    document.getElementById("dnastrandsac2ext").style.display = "block";
-    document.getElementById("dnastrandsbc2ext").style.display = "block";
-    document.getElementById("dnac2exta").style.display = "block";
-    document.getElementById("dnac2extb").style.display = "block";
+    document.getElementById("taqpolyc21").style.display = "block";
+    document.getElementById("taqpolyc21r").style.display = "block";
+    document.getElementById("taqpolyc22").style.display = "block";
+    document.getElementById("taqpolyc22r").style.display = "block";
+
     setTimeout(cycle3, 5000);
 
   }
@@ -611,27 +625,286 @@ function runpcr() {
     //document.getElementById("pcrsteps").style.display = "block";
     document.getElementById("cyclenum").innerHTML = "Cycle 3";
     document.getElementById("ext1min").style.display = "none";
-    //document.getElementById("stepshead").style.display = "none";
-    document.getElementById("c3").style.display = "block";
-    document.getElementById("c2dna").style.visibility = "hidden";
-    document.getElementById("c2dnaa").style.visibility = "hidden";
-    document.getElementById("c2dnab").style.display = "none";
-    document.getElementById("c2dnac").style.display = "none";
-    document.getElementById("dnastrandsac2ext").style.display = "none";
-    document.getElementById("dnastrandsbc2ext").style.display = "none";
-    document.getElementById("dnac2exta").style.display = "none";
-    document.getElementById("dnac2extb").style.display = "none";
-    document.getElementById("dnaprimerc2").style.display = "none";
-    document.getElementById("dnaprimer12c2").style.display = "none";
-    document.getElementById("dnaprimerc2b").style.display = "none";
-    document.getElementById("dnaprimer22c2b").style.display = "none";
-    document.getElementById("dnaprimerb").style.display = "none";
-    document.getElementById("dnaprimer").style.display = "none";
-    document.getElementById("dnastrandsa").style.display = "none";
-    document.getElementById("dnastrandsb").style.display = "none";
 
- 
+    document.getElementById("dnastrandsac31").style.display = "block";
+    document.getElementById("dnastrandsbc31").style.display = "block";
+    document.getElementById("dnastrandsac32").style.display = "block";
+    document.getElementById("dnastrandsbc32").style.display = "block";
+    document.getElementById("dnastrandsac31t").style.display = "block";
+    document.getElementById("dnastrandsbc31b").style.display = "block";
+    document.getElementById("dnastrandsac32t").style.display = "block";
+    document.getElementById("dnastrandsbc32b").style.display = "block";
 
-  } */
+
+
+    document.getElementById("dnaprimerc2f2").style.display = "none";
+    document.getElementById("dnaprimerbc2r2").style.display = "none";
+    document.getElementById("dnaprimerc2f1").style.display = "none";
+    document.getElementById("dnaprimerbc2r1").style.display = "none";
+    document.getElementById("taqpolyc21").style.display = "none";
+    document.getElementById("taqpolyc21r").style.display = "none";
+    document.getElementById("taqpolyc22").style.display = "none";
+    document.getElementById("taqpolyc22r").style.display = "none";
+    document.getElementById("dnastrandsac21").style.display = "none";
+    document.getElementById("dnastrandsbc21").style.display = "none";
+    document.getElementById("dnastrandsac22").style.display = "none";
+    document.getElementById("dnastrandsbc22").style.display = "none";
+  }
+
+}
+
+
+function increasetemp94() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 150;
+  var speed = 3;
+
+  function drawLine() {
+
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    ctx.moveTo(0, posY); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  function moveLine() {
+    posY += speed;
+
+    if (posY < 0 || posY > canvas.height) {
+      speed = speed * -1;
+    }
+  }
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+
+}
+
+
+function decreasetemp57() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0;
+  var speed = 3;
+
+  function drawLine() {
+    ctx.clearRect(0, 0, canvas.width, 57);
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    //ctx.moveTo(0, 57); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  function moveLine() {
+    posY += speed;
+
+    if (posY > 0 || posY < canvas.height) {
+      speed = speed * -1;
+    }
+  }
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+}
+
+function increasetemp72() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 30;
+  //var speed=3;
+
+  function drawLine() {
+
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    ctx.moveTo(0, posY); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  /* function moveLine () {
+  posY += speed;
+  
+  if (posY < 0 || posY > 40) {
+    speed = speed * -1;
+  }
+  }*/
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    //moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+}
+
+function increasec2temp94() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0;
+  //var speed=3;
+
+  function drawLine() {
+
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    ctx.moveTo(0, posY); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  /* function moveLine () {
+  posY += speed;
+  
+  if (posY < 0 || posY > 40) {
+    speed = speed * -1;
+  }
+  }*/
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    //moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+}
+
+function decreasec2temp57() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 0;
+  var speed = 3;
+
+  function drawLine() {
+    ctx.clearRect(0, 0, canvas.width, 57);
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    //ctx.moveTo(0, 57); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  function moveLine() {
+    posY += speed;
+
+    if (posY > 0 || posY < canvas.height) {
+      speed = speed * -1;
+    }
+  }
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+}
+
+function increasec2temp72() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 30;
+  //var speed=3;
+
+  function drawLine() {
+
+    ctx.strokeStyle = 'red';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    ctx.moveTo(0, posY); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  /* function moveLine () {
+  posY += speed;
+  
+  if (posY < 0 || posY > 40) {
+    speed = speed * -1;
+  }
+  }*/
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    //moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+
+}
+
+
+function cleartemp() {
+  canvas = document.getElementById("thermometer");
+  ctx = canvas.getContext("2d");
+  var posY = 30;
+  var speed = 3;
+
+  function drawLine() {
+    ctx.clearRect(0, 0, canvas.width, 180);
+    ctx.strokeStyle = '';
+    ctx.lineWidth = 600;
+    ctx.beginPath();
+    //ctx.moveTo(0, 57); /*  0-130*/
+    ctx.lineTo(0, 180);
+    ctx.stroke();
+  }
+
+  function moveLine() {
+    posY += speed;
+
+    if (posY > 0 || posY < canvas.height) {
+      speed = speed * -1;
+    }
+  }
+
+  function loop() {
+    // clear old frame;
+    //ctx.clearRect(0,0,canvas.width, 57);
+
+    moveLine();
+    drawLine();
+    cancelani = requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
 
 }

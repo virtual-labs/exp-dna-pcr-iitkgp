@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "Which of the following statements is accurate for the PCR – polymerase chain reaction? ",
+      "question": "1. Which of the following statements is accurate for the PCR – polymerase chain reaction? ",
       "answers": {
         "a": "Automated PCR machines are called thermal cyclers",
         "b": "A thermostable DNA polymerase is required",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following is an application of using Polymerase Chain Reaction?",
+      "question": "2. Which of the following is an application of using Polymerase Chain Reaction?",
       "answers": {
         "a": "DNA cloning",
         "b": "Medical diagnostics",
@@ -26,7 +26,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Primers used for PCR are ",
+      "question": "3. Primers used for PCR are ",
       "answers": {
         "a": "Single-stranded DNA oligonucleotide",
         "b": "Double-stranded RNA oligonucleotide",
@@ -38,7 +38,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Taq polymerase used for DNA amplification in PCR is isolated from",
+      "question": "4. Taq polymerase used for DNA amplification in PCR is isolated from",
       "answers": {
         "a": "Thermus Aquaticus",
         "b": "Homo Sapiens",
@@ -50,7 +50,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following is not a component of the PCR reaction mixture?",
+      "question": "5. Which of the following is not a component of the PCR reaction mixture?",
       "answers": {
         "a": "dNTPs",
         "b": "DNA ploymerase",
@@ -62,7 +62,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "DNA polymerase used in PCR must have the following characteristics",
+      "question": "6. DNA polymerase used in PCR must have the following characteristics",
       "answers": {
         "a": "Thermostability",
         "b": "High fidelity",
@@ -74,7 +74,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "How many types of dNTPs are required for PCR?",
+      "question": "7. How many types of dNTPs are required for PCR?",
       "answers": {
         "a": "1",
         "b": "2",
@@ -86,7 +86,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Optimum GC content for primer design for PCR must be in the range of",
+      "question": "8. Optimum GC content for primer design for PCR must be in the range of",
       "answers": {
         "a": "40%- 60%",
         "b": "90%- 100%",
@@ -98,7 +98,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": " Polymerase chain reaction (PCR) was invented by ",
+      "question": "9. Polymerase chain reaction (PCR) was invented by ",
       "answers": {
         "a": "Kary Mullis",
         "b": "Ulrich K. Laemmli",
@@ -110,7 +110,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following is  a thermostable polymerase? ",
+      "question": "10. Which of the following is  a thermostable polymerase? ",
       "answers": {
         "a": "Pfu polymerase",
         "b": "Taq polymerase",

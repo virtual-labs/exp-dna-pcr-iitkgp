@@ -2,7 +2,7 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "The correct order of steps in PCR is",
+      "question": "1. The correct order of steps in PCR is",
       "answers": {
         "a": "Annealing, Extension, Denaturation",
         "b": "Extension, Annealing, Denaturation",
@@ -14,7 +14,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "A high temperature of 95ͦ C is used in PCR for the purpose of",
+      "question": "2. A high temperature of 95ͦ C is used in PCR for the purpose of",
       "answers": {
         "a": "Separation of the template DNA strands",
         "b": "Synthesis of new DNA strands",
@@ -26,7 +26,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "How many DNA duplex is obtained from one DNA duplex after 5 cycles of PCR?",
+      "question": "3. How many DNA duplex is obtained from one DNA duplex after 5 cycles of PCR?",
       "answers": {
         "a": "8",
         "b": "16",
@@ -38,7 +38,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "DNA amplification due to PCR can be analyzed using",
+      "question": "4. DNA amplification due to PCR can be analyzed using",
       "answers": {
         "a": "SDS PAGE",
         "b": "Agarose gel electrophoresis",
@@ -50,7 +50,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following ions functions as a cofactor for DNA polymerases?",
+      "question": "5. Which of the following ions functions as a cofactor for DNA polymerases?",
       "answers": {
         "a": "Mg<sup>2+</sup>",
         "b": "Zn<sup>2+</sup>",
@@ -62,7 +62,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following statements are true regarding PCR? ",
+      "question": "6. Which of the following statements are true regarding PCR? ",
       "answers": {
         "a": "Primer extension occurs at 72°C",
         "b": "Denaturation involves heating at 90 to 98°C",
@@ -74,7 +74,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "What would be the effect on the PCR reaction if any of the following circumstances arose: 1) there are no primers in the reaction, 2) there are no dNTPs in the reaction, 3) there is no Taq polymerase in the reaction?",
+      "question": "7. What would be the effect on the PCR reaction if any of the following circumstances arose: 1) there are no primers in the reaction, 2) there are no dNTPs in the reaction, 3) there is no Taq polymerase in the reaction?",
       "answers": {
         "a": "PCR would proceed normally",
         "b": "Non-specific amplification of PCR ",
@@ -86,7 +86,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Which of the following statement is true?",
+      "question": "8. Which of the following statement is true?",
       "answers": {
         "a": "PCR require the target DNA, two primers, four dNTPs and a thermostable DNA polymerase",
         "b": "PCR require the target DNA, one primer, four dNTPs and a thermostable DNA polymerase",
@@ -98,7 +98,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Approximately how many PCR cycles are needed for the original DNA to be amplified for future use?",
+      "question": "9. Approximately how many PCR cycles are needed for the original DNA to be amplified for future use?",
       "answers": {
         "a": "1-2",
         "b": "18-35",
@@ -110,7 +110,7 @@
       "difficulty": "beginner"
     },
     {
-      "question": "Extension temperature of 72°C in used in PCR is used for the purpose of?",
+      "question": "10. Extension temperature of 72°C in used in PCR is used for the purpose of?",
       "answers": {
         "a": "Disrupting Hydrogen bonds between complementary bases of the template DNA ",
         "b": "Annealing of primer to the template",
