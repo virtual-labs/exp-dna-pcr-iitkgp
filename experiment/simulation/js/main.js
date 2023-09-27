@@ -872,14 +872,14 @@ function decreasec2temp57() {
 }
 
 function increasec2temp72() {
-  canvas = document.getElementById("thermometer2");
-  ctx = canvas.getContext("2d");
+  var canvas = document.getElementById("thermometer2");
+  var ctx = canvas.getContext("2d");
   var posY = 30;
   //var speed=3;
 
   function drawLine() {
 
-    ctx.strokeStyle = 'black';
+    ctx.strokeStyle = 'red';
     ctx.lineWidth = 600;
     ctx.beginPath();
     ctx.moveTo(0, posY); /*  0-130*/
