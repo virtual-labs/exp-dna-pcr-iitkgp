@@ -27,37 +27,37 @@ function thawcomp() {
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 1) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt1").disabled = false;
+    //document.getElementById("opt1").disabled = false;
     document.getElementById("tube1").style.display = "block";
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 2) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt2").disabled = false;
+    //document.getElementById("opt2").disabled = false;
     document.getElementById("tube2").style.display = "block";
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 3) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt3").disabled = false;
+    // document.getElementById("opt3").disabled = false;
     document.getElementById("tube3").style.display = "block";
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 4) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt6").disabled = false;
+    //document.getElementById("opt6").disabled = false;
     document.getElementById("tube6").style.display = "block";
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 5) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt4").disabled = false;
+    // document.getElementById("opt4").disabled = false;
     document.getElementById("tube4").style.display = "block";
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 6) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
-    document.getElementById("opt5").disabled = false;
+    // document.getElementById("opt5").disabled = false;
     document.getElementById("tube5").style.display = "block";
   }
 
@@ -69,35 +69,35 @@ function thawcomp() {
 
 
 function prepmix() {
-  if ((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked)) {
-    // alert("correct");
-    document.getElementById("tube").style.display = "block";
-    document.getElementById("step2").disabled = true;
-    document.getElementById("thaw").innerHTML = "";
-    document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
-    document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
-    tubeimg = document.getElementById('tube');
-    document.getElementById("step3").disabled = false;
-    document.getElementById("tube1").style.display = "none";
-    document.getElementById("tube2").style.display = "none";
-    document.getElementById("tube3").style.display = "none";
-    document.getElementById("tube4").style.display = "none";
-    document.getElementById("tube5").style.display = "none";
-    document.getElementById("tube6").style.display = "none";
-    document.getElementById("icebucket").style.display = "none";
+  //if ((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked)) {
+  // alert("correct");
+  document.getElementById("tube").style.display = "block";
+  document.getElementById("step2").disabled = true;
+  document.getElementById("thaw").innerHTML = "";
+  document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
+  document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
+  tubeimg = document.getElementById('tube');
+  document.getElementById("step3").disabled = false;
+  document.getElementById("tube1").style.display = "none";
+  document.getElementById("tube2").style.display = "none";
+  document.getElementById("tube3").style.display = "none";
+  document.getElementById("tube4").style.display = "none";
+  document.getElementById("tube5").style.display = "none";
+  document.getElementById("tube6").style.display = "none";
+  document.getElementById("icebucket").style.display = "none";
 
 
 
-    //
-    tubeimg.removeEventListener('click', tubeinsert);
-  }
+  //
+  tubeimg.removeEventListener('click', tubeinsert);
+  /*}
   else if ((document.getElementById('opt1').checked == false) || (document.getElementById('opt2').checked == false) || (document.getElementById('opt3').checked == false) || (document.getElementById('opt4').checked == false) || (document.getElementById('opt5').checked == false) || (document.getElementById('opt6').checked == false)) {
     alert("One or more component(s) is(are) required for preparing the mixture.");
     document.getElementById("thaw").innerHTML = "";
     document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
     document.getElementById("prep").innerHTML = "One or more component(s) is(are) required for preparing the mixture.";
   }
-
+*/
   // document.getElementById("prep").innerHTML = "The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.";
 
 
@@ -242,7 +242,7 @@ function runpcr() {
   document.getElementById("cyclenum").innerHTML = "Cycle 1";
   document.getElementById("stepcycle").style.display = "block";
   document.getElementById("thermo").style.display = "block";
-  document.getElementById("thermometer").style.display = "block";
+
   document.getElementById("thermometerborder").style.display = "block";
 
 
@@ -251,7 +251,7 @@ function runpcr() {
 
   function separatedna() {
 
-
+    document.getElementById("thermometer").style.display = "block";
     increasetemp94();
 
     var dnaa = document.getElementById("dnastrandsa");
@@ -404,7 +404,7 @@ function runpcr() {
   }
 
   function gotostep2() {
-    cleartemp();
+    // cleartemp();
     document.getElementById("goto2").style.background = "#ADFFF5 ";
     document.getElementById("goto2").style.opacity = "50%";
     document.getElementById("ext1min").style.display = "none";
@@ -424,6 +424,7 @@ function runpcr() {
 
 
   function c2dnaseparateb() {
+
     increasec2temp94();
     document.getElementById("pcrstp1").style.display = "block";
     //document.getElementById("stepsheadc21").style.display = "block";
@@ -442,7 +443,7 @@ function runpcr() {
       if (dnasepbtopp == 8) {
 
         clearInterval(imgdnac2sepb);
-        setTimeout(c2dnaprimer1, 5000);
+        setTimeout(c2dnaprimer1, 3000);
 
       } else {
 
@@ -459,8 +460,8 @@ function runpcr() {
     document.getElementById("pcrstp1").style.display = "block";
     //document.getElementById("pcrsteps").style.display = "none";
     //document.getElementById("stepshead").style.display = "none";
-    document.getElementById("den2min").style.background = "#ADFFF5 ";
-    document.getElementById("den2min").style.opacity = "50%";
+    /* document.getElementById("den2min").style.background = "#ADFFF5 ";
+    document.getElementById("den2min").style.opacity = "50%"; */
     document.getElementById("goto2").style.display = "none";
 
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
@@ -476,7 +477,8 @@ function runpcr() {
       if (dnasepatopp == 70) {
 
         clearInterval(imgdnac2sepa);
-        setTimeout(c2dnaprimer2, 5000);
+        setTimeout(c2dnaprimer2, 3000);
+
       } else {
 
         dnasepatopp++;
@@ -487,13 +489,15 @@ function runpcr() {
   }
 
   function c2dnaprimer1() {
+    document.getElementById("thermometer").style.display = "none";
+    document.getElementById("thermometer1").style.display = "block";
     decreasec2temp57();
     document.getElementById("dnaprimerc2f1").style.display = "block";
     document.getElementById("dnaprimerbc2r1").style.display = "block";
     document.getElementById("pcrstp2").style.display = "block";
     document.getElementById("den2min").style.display = "none";
     document.getElementById("ann2min").style.display = "block";
-    //document.getElementById("stepshead").style.display = "none";
+
     document.getElementById("cyclenum").innerHTML = "Cycle 2";
 
     var dnac2prif = document.getElementById("dnaprimerc2f1");
@@ -544,6 +548,7 @@ function runpcr() {
   }
 
   function c2dnaprimer2() {
+
     document.getElementById("dnaprimerc2f2").style.display = "block";
     document.getElementById("dnaprimerbc2r2").style.display = "block";
     document.getElementById("pcrstp2").style.display = "block";
@@ -602,6 +607,9 @@ function runpcr() {
 
 
   function c2dnaext() {
+    document.getElementById("thermometer").style.display = "none";
+    document.getElementById("thermometer1").style.display = "none";
+    document.getElementById("thermometer2").style.display = "block";
     increasec2temp72();
     document.getElementById("pcrstp3").style.display = "block";
     document.getElementById("ann2min").style.display = "none";
@@ -623,7 +631,7 @@ function runpcr() {
     document.getElementById("pcrstp3").style.display = "block";
     //document.getElementById("stepsheadc23").style.display = "none";
     //document.getElementById("pcrsteps").style.display = "block";
-    document.getElementById("cyclenum").innerHTML = "Cycle 3";
+    document.getElementById("cyclenum").innerHTML = "Cycle 2";
     document.getElementById("ext1min").style.display = "none";
 
     document.getElementById("dnastrandsac31").style.display = "block";
@@ -649,6 +657,32 @@ function runpcr() {
     document.getElementById("dnastrandsbc21").style.display = "none";
     document.getElementById("dnastrandsac22").style.display = "none";
     document.getElementById("dnastrandsbc22").style.display = "none";
+
+    const canvas = document.getElementById('message');
+
+
+// Get the 2D drawing context
+const ctx = canvas.getContext('2d');
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+// Set font properties
+ctx.font = 'bold 13px Arial'; // You can adjust the font weight, size and family
+
+// Set text properties
+ctx.fillStyle = 'black'; // Text color
+ctx.textAlign = 'center'; // Text alignment (centered horizontally)
+ctx.textBaseline = 'middle'; // Text baseline (centered vertically)
+
+// Define the text to be displayed
+const text = "Sample is ready for agarose gel electrophoresis.";
+
+
+// Get the position to place the text (in this case, centered on the canvas)
+const x = canvas.width / 2;
+const y = canvas.height / 2;
+
+// Draw the text on the canvas
+ctx.fillText(text, x, y);
+
   }
 
 }
@@ -801,34 +835,35 @@ function increasec2temp94() {
 }
 
 function decreasec2temp57() {
-  canvas = document.getElementById("thermometer");
-  ctx = canvas.getContext("2d");
-  var posY = 0;
-  var speed = 3;
+
+  var canvas = document.getElementById("thermometer1");
+  var ctx = canvas.getContext("2d");
+  var posY = 57;
+  //var speed = 3;
 
   function drawLine() {
     ctx.clearRect(0, 0, canvas.width, 57);
     ctx.strokeStyle = 'red';
     ctx.lineWidth = 600;
     ctx.beginPath();
-    //ctx.moveTo(0, 57); /*  0-130*/
+     ctx.moveTo(0, posY); /*  0-130*/
     ctx.lineTo(0, 180);
     ctx.stroke();
   }
 
-  function moveLine() {
+  /* function moveLine() {
     posY += speed;
 
     if (posY > 0 || posY < canvas.height) {
       speed = speed * -1;
     }
   }
-
+ */
   function loop() {
     // clear old frame;
     //ctx.clearRect(0,0,canvas.width, 57);
 
-    moveLine();
+    //  moveLine();
     drawLine();
     cancelani = requestAnimationFrame(loop);
   }
@@ -837,14 +872,14 @@ function decreasec2temp57() {
 }
 
 function increasec2temp72() {
-  canvas = document.getElementById("thermometer");
+  canvas = document.getElementById("thermometer2");
   ctx = canvas.getContext("2d");
   var posY = 30;
   //var speed=3;
 
   function drawLine() {
 
-    ctx.strokeStyle = 'red';
+    ctx.strokeStyle = 'black';
     ctx.lineWidth = 600;
     ctx.beginPath();
     ctx.moveTo(0, posY); /*  0-130*/
@@ -870,10 +905,11 @@ function increasec2temp72() {
   }
   requestAnimationFrame(loop);
 
+
 }
 
 
-function cleartemp() {
+/* function cleartemp() {
   canvas = document.getElementById("thermometer");
   ctx = canvas.getContext("2d");
   var posY = 30;
@@ -884,7 +920,7 @@ function cleartemp() {
     ctx.strokeStyle = '';
     ctx.lineWidth = 600;
     ctx.beginPath();
-    //ctx.moveTo(0, 57); /*  0-130*/
+    //ctx.moveTo(0, 57); 
     ctx.lineTo(0, 180);
     ctx.stroke();
   }
@@ -905,6 +941,6 @@ function cleartemp() {
     drawLine();
     cancelani = requestAnimationFrame(loop);
   }
-  requestAnimationFrame(loop);
+  requestAnimationFrame(loop); 
 
-}
+}*/

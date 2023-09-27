@@ -148,7 +148,26 @@ Developer: Prakriti Dhang
     width:0.8%;
     height:29%;
     top:13.2%;
+    left:40.1%; 
+    display: none; 
+}
+
+#thermometer1{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
     left:40.1%;  
+    display: none;
+}
+
+#thermometer2{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
+    left:40.1%;  
+    display: none;
 }
 
 #thermometerborder{
@@ -483,6 +502,14 @@ Developer: Prakriti Dhang
 #c3{
     position: absolute;
     width:30%;
-    top:10%; /* 27 */
+    top:10%; /* 10 */
+    left:61.1%;
+}
+
+#message{
+    position: absolute;
+    width:30%;
+    height:20%;
+    top:80%; /* 27 */
     left:61.1%;
 }

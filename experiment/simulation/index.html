@@ -148,7 +148,7 @@ Developer: Prakriti Dhang
 							<tr>
 								<td rowspan="2" class="fs-6">Step 2</td>
 								<td>
-									<div id="opta" class="form-check form-check-inline fs-6">
+									<!-- <div id="opta" class="form-check form-check-inline fs-6">
 										<input class="form-check-input" type="checkbox" value="" id="opt1" disabled>
 										<label class="form-check-label" for="opt1">
 											Forward Primers
@@ -184,7 +184,7 @@ Developer: Prakriti Dhang
 										<label class="form-check-label" for="opt6">
 											Taq. polymerase
 										</label>
-									</div>
+									</div> -->
 
 								</td>
 							</tr>
@@ -289,7 +289,13 @@ Developer: Prakriti Dhang
 							style="cursor: pointer; display: none; " alt="thermometer">
 
 							<canvas id="thermometer"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; display: none;"></canvas>
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas>
+
+							<canvas id="thermometer1"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
+							
+							<canvas id="thermometer2"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
 
 							<canvas id="thermometerborder"
 							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;"></canvas>
@@ -310,7 +316,7 @@ Developer: Prakriti Dhang
 						<button type="button" class="btn border border-2 border-dark"  id="run"></button>-->
 
 						<canvas id="run"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; display: none;"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; display: block;"
 							onclick="runpcr()"></canvas>
 
 						<!-- cycle 1 started-->
@@ -408,6 +414,10 @@ Developer: Prakriti Dhang
 						<canvas id="goto2"
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer;"></canvas>
 
+							<canvas id="message"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer;"></canvas>
+
+
 					</div>
 				</div>
 			</div>
@@ -450,6 +460,10 @@ Developer: Prakriti Dhang
 	<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script-->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./js/main.js"></script>
+	<script>
+		
+
+	</script>
 </body>
 
 </html>
