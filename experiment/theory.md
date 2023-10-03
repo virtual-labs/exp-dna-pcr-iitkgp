@@ -24,6 +24,6 @@ The components required for PCR are assembled in a tube, along with cofactors ne
 PCR amplification takes place in a thermal cycler as shown on the left, which is an instrument that automates temperature cycling and incubation times for PCR.
 
 
-<div><img src="images/Principle of PCR reaction.jpg" width="30%">
+<div><img src="images/pcr1.png" width="40%">
 <p>Schematic representation of the PCR processes that take place inside a thermal cycler.</p>
 </div>
