@@ -20,10 +20,10 @@ If we are assuming that the efficiency of the PCR reaction is perfect, then ther
 The final number of target DNA molecules is Y = X(2n) 
 where “X” is the number of  target DNA  at cycle one, “n” is the number of cycles, and “Y” is the final number of target molecules.
 
-<div><img src="images/PCR_cycle.jpg" width="30%">
+<div><img src="images/pcr2.png" width="50%">
 
 </div>
 
-<div><img src="images/PCR_amplification.jpg" width="30%">
+<div><img src="images/PCR-amplification-reaction.png" width="50%">
 <p>Schematic representation of the PCR amplification reaction.</p>
 </div>
