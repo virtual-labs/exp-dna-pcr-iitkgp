@@ -312,7 +312,7 @@ function runpcr() {
     clearInterval(imgdnapria);
     imgdnapria = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnapritopp == 47) {  //1
+      if (dnapritopp == 45) {  //1
 
         clearInterval(imgdnab);
         setTimeout(primerextdnaa, 3000);
@@ -338,7 +338,7 @@ function runpcr() {
     clearInterval(imgdnaprib);
     imgdnaprib = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnapribtopp == 24) {  //1
+      if (dnapribtopp == 25) {  //1
 
         clearInterval(imgdnaprib);
         setTimeout(primerextdnab, 3000);
@@ -509,7 +509,7 @@ function runpcr() {
     clearInterval(imgdnac2prifc21);
     imgdnac2prifc21 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnaprifc2topp == 21) {
+      if (dnaprifc2topp == 20) {
 
         clearInterval(imgdnac2prifc21);
         setTimeout(c2dnaext, 3000);
@@ -531,7 +531,7 @@ function runpcr() {
     clearInterval(imgdnac2prirc21);
     imgdnac2prirc21 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
     function frame1() {
-      if (dnaprirc2topp == 12) {
+      if (dnaprirc2topp == 13) {
 
         clearInterval(imgdnac2prirc21);
 
@@ -567,7 +567,7 @@ function runpcr() {
     clearInterval(imgdnac2prifc22);
     imgdnac2prifc22 = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnaprif2c2topp == 67) {
+      if (dnaprif2c2topp == 66) {
 
         clearInterval(imgdnac2prifc22);
         // setTimeout(c2dnaext, 5000);
@@ -622,7 +622,7 @@ function runpcr() {
     document.getElementById("taqpolyc22").style.display = "block";
     document.getElementById("taqpolyc22r").style.display = "block";
 
-    setTimeout(cycle3, 5000);
+    setTimeout(cycle3, 4000);
 
   }
   function cycle3() {
@@ -657,8 +657,9 @@ function runpcr() {
     document.getElementById("dnastrandsbc21").style.display = "none";
     document.getElementById("dnastrandsac22").style.display = "none";
     document.getElementById("dnastrandsbc22").style.display = "none";
+    document.getElementById('message').innerHTML="Sample is ready for agarose gel electrophoresis.";
 
-    const canvas = document.getElementById('message');
+   /*  const canvas = document.getElementById('message');
 
 
 // Get the 2D drawing context
@@ -681,7 +682,7 @@ const x = canvas.width / 2;
 const y = canvas.height / 2;
 
 // Draw the text on the canvas
-ctx.fillText(text, x, y);
+ctx.fillText(text, x, y); */
 
   }
 
