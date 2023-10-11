@@ -239,16 +239,16 @@ Developer: Prakriti Dhang
 
 #dnastrandsa{
     position: absolute;
-    width:35%;
-    top:31%; /* 31 */
+    width:23%;
+    top:31%; /* 31 -20*/
     left:60.1%;
 }
 
 #dnastrandsb{
     position: absolute;
-    width:35%;
-    top:35%; /* 35 */
-    left:60%;
+    width:23%;
+    top:36%; /* 36-50 */
+    left:60.2%;
    
     
 }
@@ -257,18 +257,18 @@ Developer: Prakriti Dhang
  
 #dnaprimerb{ /*  up -reverse primer  */
     position: absolute;
-    width:9.7%;
-    top:36%; /* 36 */
-    left:76.8%;
+    width:23%;
+    top:36%; /* 36 -25*/
+    left:66.8%;
    
     
 }
 
 #dnaprimer{ /*  down -forward primer  */
     position: absolute;
-    width:10.5%;
-    top:40%; /* 40 */
-    left:62.5%;
+    width:23%;
+    top:40%; /* 40-45 */
+    left:53.39%;
    
     
 }
@@ -276,15 +276,15 @@ Developer: Prakriti Dhang
 #taqpoly{
     position: absolute;
     width:2.5%;
-    top:25.5%; /*25.5 */
-    left:76%;
+    top:26.5%; /*25.5 */
+    left:73%;
 }
 
 #taqpolyr{
     position: absolute;
     width:2.5%;
     top:45.3%; /* 45.3 */
-    left:70.5%;
+    left:67.5%;
     rotate: 180deg;
 }
 
@@ -300,72 +300,72 @@ Developer: Prakriti Dhang
 
 #dnastrandsac21{
     position: absolute;
-    width:35%;
-    top:20%; /* 20 */
+    width:23%;
+    top:20%; /* 20-8 */
     left:60.1%;
 }
 
 #dnastrandsbc21{
     position: absolute;
-    width:35%;
-    top:24%; /* 24 */
+    width:23%;
+    top:24.2%; /* 24 */
     left:60.1%;
 }
 
 
 #dnastrandsac22{
     position: absolute;
-    width:35%;
-    top:46%; /* 46 */
+    width:23%;
+    top:45.8%; /* 46 */
     left:60.1%;
 }
 
 #dnastrandsbc22{
     position: absolute;
-    width:35%;
-    top:50%; /* 50 */
+    width:23%;
+    top:50%; /* 50-70 */
     left:60.1%;
 }
 
 #dnaprimerc2f1{ /*forward down dna */
     position: absolute;
-    width:10.5%;
-    top:18%; /* 18-21*/
-    left:62.5%;
+    width:23%;
+    top:18%; /* 18-20*/
+    left:53.2%;
 }
 #dnaprimerbc2r1{  /*reverse  up dna*/
     position: absolute;
-    width:9.7%;
+    width:23%;
     top:15%; /* 15- 13*/
-    left:76.7%;
+    left:66.9%;
 }
 
 #dnaprimerc2f2{ /*forward  down dna*/
     position: absolute;
-    width:10.5%;
-    top:58%; /* 58-67*/
-    left:62.5%;
+    width:23%;
+    top:58%; /* 58-66*/
+    left:53.2%;
 }
 #dnaprimerbc2r2{ /*reverse  up dna*/
     position: absolute;
-    width:9.7%;
-    top:55%; /* 55-50.2 */
-    left:76.7%;
+    width:23%;
+    top:55%; /* 55-50.5 */
+    left:66.8%;
 }
 
 
 #taqpolyc21{
     position: absolute;
     width:2.5%;
-    top:13.5%; /*13.5 */
-    left:76%;
+    top:14.5%; /*13.5 */
+    left:73.2%;
 }
 
 #taqpolyc21r{
     position: absolute;
     width:2.5%;
-    top:18.5%; /* 18.3 */
-    left:70.5%;
+    top:19%; /* 18.3 */
+    left:67.2%;
     rotate: 180deg;
 }
 
@@ -373,15 +373,15 @@ Developer: Prakriti Dhang
 #taqpolyc22{
     position: absolute;
     width:2.5%;
-    top:51%; /*51 */
-    left:76%;
+    top:52%; /*51 */
+    left:73.1%;
 }
 
 #taqpolyc22r{
     position: absolute;
     width:2.5%;
     top:65%; /* 65 */
-    left:70.5%;
+    left:67.2%;
     rotate: 180deg;
 }
 
@@ -389,43 +389,43 @@ Developer: Prakriti Dhang
 
 #dnastrandsac31{
     position: absolute;
-    width:35%;
+    width:23%;
     top:8%; /* 8 */
     left:60.1%;
 }
 
 #dnastrandsbc31{
     position: absolute;
-    width:35%;
-    top:12%; /* 12 */
+    width:23%;
+    top:12.2%; /* 12 */
     left:60.1%;
 }
 
 
 #dnastrandsac32{
     position: absolute;
-    width:35%;
-    top:21%; /* 21 */
+    width:23%;
+    top:20%; /* 21 */
     left:60.1%;
 }
 
 #dnastrandsbc32{
     position: absolute;
-    width:35%;
+    width:23%;
     top:24.2%; /* 24.2*/
     left:60.1%;
 }
 
 #dnastrandsac31t{
     position: absolute;
-    width:35%;
-    top:46.5%; /* 46.5 */
+    width:23%;
+    top:46%; /* 46.5 */
     left:60.1%;
 }
 
 #dnastrandsbc31b{
     position: absolute;
-    width:35%;
+    width:23%;
     top:50%; /* 50 */
     left:60.1%;
 }
@@ -433,14 +433,14 @@ Developer: Prakriti Dhang
 
 #dnastrandsac32t{
     position: absolute;
-    width:35%;
-    top:67%; /* 67 */
+    width:23%;
+    top:66%; /* 67 */
     left:60.1%;
 }
 
 #dnastrandsbc32b{
     position: absolute;
-    width:35%;
+    width:23%;
     top:70%; /* 70 */
     left:60.1%;
 }
