@@ -3,9 +3,9 @@
 
 Steps | Action  | Procedure Details| 
 :--|:--|:--|
-<img src="images/Thawing_on_ice.png" class="img-fluid" width="40%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
-<img src="images/Components.png" class="img-fluid" width="70%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
-<img src="images/Thermal_cycler.jpg" class="img-fluid" width="60%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
+<img src="images/Thawing_on_ice.png" class="img-fluid" width="60%"> | Thawing the PCR reaction components on ice |  All the components of the PCR reaction must be thawed and centrifuged before use  |
+<img src="images/Components.png" class="img-fluid" width="80%"> | Preparation of the PCR reaction mix |  The components required for PCR as mentioned before are assembled in a tube and mixed and centrifuged. Bubbles must be avoided in the PCR reaction tube. In order to avoid  non-specific primed synthesis during the assembly of the reaction prior to PCR cycling, all components of the PCR reaction must be assembled on ice and the DNA- Polymerase should be added at last.  |
+<img src="images/Thermal_cycler.jpg" class="img-fluid" width="70%"> | Incubation of the PCR reaction mixture in a thermal cycler |  PCR cycling and running parameters must be set up for efficient amplification. The details steps are described below.|
 
 
 
@@ -20,10 +20,10 @@ If we are assuming that the efficiency of the PCR reaction is perfect, then ther
 The final number of target DNA molecules is Y = X(2n) 
 where “X” is the number of  target DNA  at cycle one, “n” is the number of cycles, and “Y” is the final number of target molecules.
 
-<div><img src="images/pcr2.png" class="img-fluid" width="50%">
+<div><img src="images/pcr2.png" class="img-fluid" width="70%">
 
 </div>
 
-<div><img src="images/PCR-amplification-reaction.png"  class="img-fluid" width="50%">
+<div><img src="images/PCR-amplification-reaction.png"  class="img-fluid" width="70%">
 <p>Schematic representation of the PCR amplification reaction.</p>
 </div>
