@@ -60,11 +60,11 @@ Developer: Prakriti Dhang
 					<div class="card-header fs-5 fw-bold">Instructions</div>
 					<div class="card-body">
 						<ol>
-							<li>Click on "Click to Start the Experiment" button.
+							<li>Click on "Start the Experiment" button.
 							</li>
-							<li>In step 1, select components from the dropdown and click on "Thawing the PCR reaction
-								components on ice" button.</li>
-							<li>In step 2, select components for PCR mixture and click on "Preparation of PCR mixture"
+							<li>In step 1, select components from the dropdown button "Choose the PCR reaction components for thawing on
+								ice"</li>
+							<li>In step 2, click on "Preparation of PCR mixture"
 								button.
 							</li>
 							<li>In step 3, click on "Incubation of the PCR reaction mixture in a thermal
@@ -73,8 +73,9 @@ Developer: Prakriti Dhang
 								on "Close" button to close the thermal cycler.</li>
 							<li> Click on "Run" button of Thermal Cycler for PCR amplification. The schematic
 								representaion of PCR
-								amplification will be appear on right panel.</li>
+								amplification will be appear on right side.</li>
 						</ol>
+						<b>Note:</b> To repeat the experiment, click on the "Re-Do the Experiment" button.
 					</div>
 
 				</div>
@@ -120,7 +121,7 @@ Developer: Prakriti Dhang
 									<button id="step0" type="button"
 										class="btn btn-success border border-1  rounded-3 fs-6 m-2"
 										style="cursor: pointer; " data-bs-toggle="modal"
-										data-bs-target="#exampleModal">Click to Start the Experiment</button>
+										data-bs-target="#exampleModal">Start the Experiment</button>
 
 										<button id="steprs" type="button"
 										class="btn btn-warning border border-1  rounded-3 fs-6 m-2"
@@ -140,8 +141,8 @@ Developer: Prakriti Dhang
 										<option value="4">Taq. Polymerase</option>
 										<option value="5">dNTPs</option>
 										<option value="6">Mg<sup>2+</sup>ions</option>
-										<option value="8">Ligase</option>
-										<option value="9">Restriction enzymes</option>
+										<option value="7">Ligase</option>
+										<option value="8">Restriction enzymes</option>
 									</select>
 								</td>
 							</tr>
@@ -261,13 +262,16 @@ Developer: Prakriti Dhang
 						<img class="img-fluid" id="pcrmachine" src="images/pcr-machine.png" alt="thermal-cycler">
 
 						<img class="img-fluid" id="cellplate" src="images/cells-plate.png" alt="Cell plate">
+						<img class="img-fluid" id="tubecover" src="images/tubecover.png" style="cursor: pointer; display:none; "
+							alt="PCR tubecover">
 						<div class="door door1 " style="float:left">
+						
 							<img class="img-fluid " id="pcrmachinecover" src="images/topscreen.png"
 								style="display: block;" alt="Thermal cycle top">
 						</div>
 						<img class="img-fluid" id="tube" src="images/tube.png" style="cursor: pointer; display: none; "
 							alt="PCR tube">
-
+							
 
 						<img class="img-fluid" id="tube1" src="images/primers.png"
 							style="cursor: pointer; display: none; " alt="PCR tube1">
@@ -321,15 +325,15 @@ Developer: Prakriti Dhang
 
 						<!-- cycle 1 started-->
 
-						<img class="img-fluid" id="dnastrandsa" src="images/Topstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsa" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsb" src="images/Bottomstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsb" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
 						<!-- dna primer added-->
-						<img class="img-fluid" id="dnaprimer" src="images/Forwardpri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimer" src="images/Forward_pri.png" style="display:none;"
 							alt="dnaprimer">
-						<img class="img-fluid" id="dnaprimerb" src="images/Reversepri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerb" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
 							<img class="img-fluid" id="taqpoly" src="images/Taq_polymerase.png" style="display:none;"
@@ -338,28 +342,28 @@ Developer: Prakriti Dhang
 							<img class="img-fluid" id="taqpolyr" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpolyr">
 
-							<img class="img-fluid" id="cycle1dna" src="images/DNA_strands_formed_after_cycle_1_of_PCR.png" style="display:none;"
-							alt="cycle1">
+							<!--img class="img-fluid" id="cycle1dna" src="images/DNA_strands_formed_after_cycle_1_of_PCR.png" style="display:none;"
+							alt="cycle1"-->
 
-							<img class="img-fluid" id="dnastrandsac21" src="images/Topstrand.png" style="display:none;"
+							<img class="img-fluid" id="dnastrandsac21" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc21" src="images/Bottomstrand.png" style="display:none;"
-							alt="dnastrands">
-
-							<img class="img-fluid" id="dnastrandsac22" src="images/Topstrand.png" style="display:none;"
-							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc22" src="images/Bottomstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsbc21" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
+							<img class="img-fluid" id="dnastrandsac22" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc22" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
 
-							<img class="img-fluid" id="dnaprimerc2f1" src="images/Forwardpri.png" style="display:none;"
+
+							<img class="img-fluid" id="dnaprimerc2f1" src="images/Forward_pri.png" style="display:none;"
 							alt="dnaprimer">
-						<img class="img-fluid" id="dnaprimerbc2r1" src="images/Reversepri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerbc2r1" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
-							<img class="img-fluid" id="dnaprimerc2f2" src="images/Forwardpri.png" style="display:none;"
+							<img class="img-fluid" id="dnaprimerc2f2" src="images/Forward_pri.png" style="display:none;"
 							alt="dnaprimer">
-						<img class="img-fluid" id="dnaprimerbc2r2" src="images/Reversepri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerbc2r2" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
 
@@ -381,24 +385,24 @@ Developer: Prakriti Dhang
 
 							<!-- Cycle 3-->
 
-							<img class="img-fluid" id="dnastrandsac31" src="images/Topstrand.png" style="display:none;"
+							<img class="img-fluid" id="dnastrandsac31" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc31" src="images/Bottomstrand.png" style="display:none;"
-							alt="dnastrands">
-
-							<img class="img-fluid" id="dnastrandsac32" src="images/Topstrand.png" style="display:none;"
-							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc32" src="images/Bottomstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsbc31" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac31t" src="images/Topstrand.png" style="display:none;"
+							<img class="img-fluid" id="dnastrandsac32" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc31b" src="images/Bottomstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsbc32" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac32t" src="images/Topstrand.png" style="display:none;"
+							<img class="img-fluid" id="dnastrandsac31t" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
-						<img class="img-fluid" id="dnastrandsbc32b" src="images/Bottomstrand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsbc31b" src="images/Bottom_strand.png" style="display:none;"
+							alt="dnastrands">
+
+							<img class="img-fluid" id="dnastrandsac32t" src="images/Top_strand.png" style="display:none;"
+							alt="dnastrands">
+						<img class="img-fluid" id="dnastrandsbc32b" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 						
 
