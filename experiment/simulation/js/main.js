@@ -186,6 +186,7 @@ function tubeinsert() {
     if (tubetopp == 20) {
       tubeinst.style.zIndex = -2;
       clearInterval(imgtbdown);
+      document.getElementById("tubecover").style.display="block";
 
     } else {
 
@@ -204,6 +205,7 @@ element1.addEventListener("click", toggleDoor);
 
 function toggleDoor() {
   element2.classList.toggle("doorOpen1");
+ 
 
 }
 
@@ -312,10 +314,10 @@ function runpcr() {
     clearInterval(imgdnapria);
     imgdnapria = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnapritopp == 45) {  //1
+      if (dnapritopp == 46) {  //1
 
         clearInterval(imgdnab);
-        setTimeout(primerextdnaa, 3000);
+        setTimeout(primerextdnaa, 2000);
       } else {
 
         dnapritopp++;
@@ -338,10 +340,10 @@ function runpcr() {
     clearInterval(imgdnaprib);
     imgdnaprib = setInterval(frame, 50); // frame is 30 denotes the speed of the movement
     function frame() {
-      if (dnapribtopp == 25) {  //1
+      if (dnapribtopp == 24) {  //1
 
         clearInterval(imgdnaprib);
-        setTimeout(primerextdnab, 3000);
+        setTimeout(primerextdnab, 2000);
       } else {
 
         dnapribtopp--;
@@ -383,7 +385,7 @@ function runpcr() {
 
     /* document.getElementById("c2dnab").style.display = "block";
     document.getElementById("c2dnac").style.display = "block"; */
-    setTimeout(cycle2, 3000);
+    setTimeout(cycle2, 2000);
     //setTimeout(c2dnaseparateb, 5000);
 
   }
@@ -531,7 +533,7 @@ function runpcr() {
     clearInterval(imgdnac2prirc21);
     imgdnac2prirc21 = setInterval(frame1, 50); // frame is 30 denotes the speed of the movement
     function frame1() {
-      if (dnaprirc2topp == 13) {
+      if (dnaprirc2topp == 12) {
 
         clearInterval(imgdnac2prirc21);
 
@@ -622,7 +624,7 @@ function runpcr() {
     document.getElementById("taqpolyc22").style.display = "block";
     document.getElementById("taqpolyc22r").style.display = "block";
 
-    setTimeout(cycle3, 4000);
+    setTimeout(cycle3, 3000);
 
   }
   function cycle3() {
