@@ -665,7 +665,7 @@ function runpcr() {
     document.getElementById("dnastrandsbc21").style.display = "none";
     document.getElementById("dnastrandsac22").style.display = "none";
     document.getElementById("dnastrandsbc22").style.display = "none";
-    document.getElementById('message').innerHTML="Sample is ready for agarose gel electrophoresis.";
+    document.getElementById('message').innerHTML="Sample is ready for agarose gel electrophoresis after running to 35x.";
 
    /*  const canvas = document.getElementById('message');
 
