@@ -17,7 +17,7 @@ Steps | Action  | Procedure Details|
 #### PCR cycle number determination
 PCR steps of denaturation, annealing, and extension are repeated many times to amplify the target DNA from the target strand. The number of cycles is usually carried out 25–35 times but it may differ depending upon the amount of DNA input and the desired yield of PCR product.  
 If we are assuming that the efficiency of the PCR reaction is perfect, then there will be doubling of the template DNA at each cycle.  
-The final number of target DNA molecules is Y = X(2n) 
+The final number of target DNA molecules is Y = X(2<sup>n</sup>) 
 where “X” is the number of  target DNA  at cycle one, “n” is the number of cycles, and “Y” is the final number of target molecules.
 
 <div><img src="images/pcr2.png" class="img-fluid" width="70%">
