@@ -64,6 +64,7 @@ function thawcomp() {
     document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     // document.getElementById("opt5").disabled = false;
     document.getElementById("tube5").style.display = "block";
+    window.scrollBy(0,500);
   }
 
   if ((thawcomponents.options[thawcomponents.selectedIndex].value == 7) || (thawcomponents.options[thawcomponents.selectedIndex].value == 8)) {
@@ -192,7 +193,7 @@ function tubeinsert() {
       tubeinst.style.zIndex = -2;
       clearInterval(imgtbdown);
       document.getElementById("tubecover").style.display="block";
-
+      document.getElementById("run").style.display = "block";
     } else {
 
       tubetopp++;
@@ -210,7 +211,7 @@ element1.addEventListener("click", toggleDoor);
 
 function toggleDoor() {
   element2.classList.toggle("doorOpen1");
- 
+ window.scrollBy(0,200);
 
 }
 
@@ -222,7 +223,7 @@ function openthermalcycle() {
     tubeimg.addEventListener('click', tubeinsert);
   } else {
     btntext.innerHTML = "Open";
-    document.getElementById("run").style.display = "block";
+    
   }
 }
 
