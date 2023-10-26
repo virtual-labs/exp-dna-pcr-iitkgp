@@ -98,23 +98,23 @@
       "difficulty": "beginner"
     },
     {
-      "question": "9. Approximately how many PCR cycles are needed for the original DNA to be amplified for future use?",
+      "question": "9. During the annealing step of PCR, which of the following events occur?",
       "answers": {
-        "a": "1-2",
-        "b": "18-35",
-        "c": "100-200",
-        "d": "1000-2000"
+        "a": "Primer binds to their target sequence",
+        "b": "DNA polymerase extends 3′ end of primers, complementary to the template",
+        "c": "Template DNA strands separate",
+        "d": "None of the above"
       },
       
-      "correctAnswer": "b",
+      "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "10. Extension temperature of 72°C in used in PCR is used for the purpose of?",
+      "question": "10. Extension temperature of 72°C in PCR is used for the purpose of?",
       "answers": {
         "a": "Disrupting Hydrogen bonds between complementary bases of the template DNA ",
         "b": "Annealing of primer to the template",
-        "c": "It is the optimum temperature for action of DNA polymerases to extend the 3′ end of primers, complementary to the template",
+        "c": "It is the optimum temperature for the action of DNA polymerases to extend the 3′ end of primers, complementary to the template",
         "d": "None of the above"
       },
       
