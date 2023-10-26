@@ -40,10 +40,10 @@
     {
       "question": "4. Taq polymerase used for DNA amplification in PCR is isolated from",
       "answers": {
-        "a": "Thermus Aquaticus",
-        "b": "Homo Sapiens",
-        "c": "Saccharomyces Cerevisiae ",
-        "d": "Escherichia Coli"
+        "a": "<i>Thermus Aquaticus</i>",
+        "b": "<i>Homo Sapiens</i>",
+        "c": "<i>Saccharomyces Cerevisiae</i> ",
+        "d": "<i>Escherichia Coli</i>"
       },
      
       "correctAnswer": "a",
