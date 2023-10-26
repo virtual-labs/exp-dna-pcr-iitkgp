@@ -21,9 +21,9 @@ The final number of target DNA molecules is Y = X(2<sup>n</sup>)
 where “X” is the number of  target DNA  at cycle one, “n” is the number of cycles, and “Y” is the final number of target molecules.
 
 <div><img src="images/pcr2.png" class="img-fluid" width="70%">
-
+<p>Fig 1: Schematic representation of the PCR amplification reaction upto cycle 1</p>
 </div>
 
 <div><img src="images/PCR-amplification-reaction.png"  class="img-fluid" width="70%">
-<p>Schematic representation of the PCR amplification reaction.</p>
+<p>Fig 2: Schematic representation of the PCR amplification reaction upto cycle 2.</p>
 </div>
