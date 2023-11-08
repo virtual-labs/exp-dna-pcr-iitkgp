@@ -1,1 +1,1 @@
-## Experiment name
+## DNA amplification by Polymerase Chain Reaction (PCR)

@@ -2,36 +2,122 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. Which of the following statements is accurate for the PCR – polymerase chain reaction? ",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Automated PCR machines are called thermal cyclers",
+        "b": "A thermostable DNA polymerase is required",
+        "c": "Millions of desired DNA copies can be produced from microgram quantities of DNA",
+        "d": "All of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. Which of the following is an application of using Polymerase Chain Reaction?",
+      "answers": {
+        "a": "DNA cloning",
+        "b": "Medical diagnostics",
+        "c": "Forensic analysis ",
+        "d": "All of the above"
       },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "3. Primers used for PCR are ",
+      "answers": {
+        "a": "Single-stranded DNA oligonucleotide",
+        "b": "Double-stranded RNA oligonucleotide",
+        "c": "Double-stranded DNA oligonucleotide ",
+        "d": "Single-stranded RNA oligonucleotide"
+      },
+     
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "4. Taq polymerase used for DNA amplification in PCR is isolated from",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "<i>Thermus Aquaticus</i>",
+        "b": "<i>Homo Sapiens</i>",
+        "c": "<i>Saccharomyces Cerevisiae</i> ",
+        "d": "<i>Escherichia Coli</i>"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following is not a component of the PCR reaction mixture?",
+      "answers": {
+        "a": "dNTPs",
+        "b": "DNA ploymerase",
+        "c": "RNA polymerase ",
+        "d": "Primers"
       },
+     
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. DNA polymerase used in PCR must have the following characteristics",
+      "answers": {
+        "a": "Thermostability",
+        "b": "High fidelity",
+        "c": "High processivity ",
+        "d": "All of the above"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. How many types of dNTPs are required for PCR?",
+      "answers": {
+        "a": "1",
+        "b": "2",
+        "c": "3 ",
+        "d": "4"
+      },
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. Optimum GC content for primer design for PCR must be in the range of",
+      "answers": {
+        "a": "40%- 60%",
+        "b": "90%- 100%",
+        "c": "20%- 30% ",
+        "d": "80%- 90%"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. Polymerase chain reaction (PCR) was invented by ",
+      "answers": {
+        "a": "Kary Mullis",
+        "b": "Ulrich K. Laemmli",
+        "c": "Arne Tiselius ",
+        "d": "Maurice Wilkins"
+      },
+     
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Which of the following is  a thermostable polymerase? ",
+      "answers": {
+        "a": "Pfu polymerase",
+        "b": "Taq polymerase",
+        "c": "Both a and b ",
+        "d": "DNA polymerase III"
+      },
+     
       "correctAnswer": "c",
       "difficulty": "beginner"
     }

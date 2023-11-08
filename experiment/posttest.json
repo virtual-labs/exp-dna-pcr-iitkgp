@@ -2,36 +2,122 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "1. The correct order of steps in PCR is",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Annealing, Extension, Denaturation",
+        "b": "Extension, Annealing, Denaturation",
+        "c": "Annealing, Denaturation, Extension",
+        "d": "Denaturation, Annealing, Extension"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+     
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "2. A high temperature of 95ͦ C is used in PCR for the purpose of",
+      "answers": {
+        "a": "Separation of the template DNA strands",
+        "b": "Synthesis of new DNA strands",
+        "c": "Binding of primers to the template",
+        "d": "All of the above"
       },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "3. How many DNA duplex is obtained from one DNA duplex after 5 cycles of PCR?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "8",
+        "b": "16",
+        "c": "32",
+        "d": "64"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "4. DNA amplification due to PCR can be analyzed using",
+      "answers": {
+        "a": "SDS PAGE",
+        "b": "Agarose gel electrophoresis",
+        "c": "EMSA",
+        "d": "Isoelectric focusing "
       },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "5. Which of the following ions functions as a cofactor for DNA polymerases?",
+      "answers": {
+        "a": "Mg<sup>2+</sup>",
+        "b": "Zn<sup>2+</sup>",
+        "c": "Cl<sup>-</sup>",
+        "d": "Na<sup>+</sup>"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "6. Which of the following statements are true regarding PCR? ",
+      "answers": {
+        "a": "Primer extension occurs at 72°C",
+        "b": "Denaturation involves heating at 90 to 98°C",
+        "c": "Annealing involves the binding of primer between 40 to 60°C",
+        "d": "All of the above"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "7. What would be the effect on the PCR reaction if any of the following circumstances arose: 1) there are no primers in the reaction, 2) there are no dNTPs in the reaction, 3) there is no Taq polymerase in the reaction?",
+      "answers": {
+        "a": "PCR would proceed normally",
+        "b": "Non-specific amplification of PCR ",
+        "c": "Reaction will cease after a few cycle",
+        "d": "PCR reaction would not commence"
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "8. Which of the following statement is true?",
+      "answers": {
+        "a": "PCR require the target DNA, two primers, four dNTPs and a thermostable DNA polymerase",
+        "b": "PCR require the target DNA, one primer, four dNTPs and a thermostable DNA polymerase",
+        "c": "PCR require the target DNA, two primers, three dNTPs and a thermostable DNA polymerase",
+        "d": "PCR require the target DNA, two primers, one out of four dNTPs and a thermostable DNA polymerase"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "9. During the annealing step of PCR, which of the following events occur?",
+      "answers": {
+        "a": "Primer binds to their target sequence",
+        "b": "DNA polymerase extends 3′ end of primers, complementary to the template",
+        "c": "Template DNA strands separate",
+        "d": "None of the above"
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "10. Extension temperature of 72°C in PCR is used for the purpose of?",
+      "answers": {
+        "a": "Disrupting Hydrogen bonds between complementary bases of the template DNA ",
+        "b": "Annealing of primer to the template",
+        "c": "It is the optimum temperature for the action of DNA polymerases to extend the 3′ end of primers, complementary to the template",
+        "d": "None of the above"
+      },
+      
       "correctAnswer": "c",
       "difficulty": "beginner"
     }

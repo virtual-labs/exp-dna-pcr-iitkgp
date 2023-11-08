@@ -1,1 +1,526 @@
-/* You CSS goes in here */
+/*  
+Lab name: Experimental Biochemistry
+Exp name: DNA amplification by polymerase chain reaction (PCR)
+File name: main.css
+Developer: Prakriti Dhang
+*/
+
+.card{
+    margin-bottom: 5px;
+}
+
+.img-container{
+
+    display: inline-block;
+    position: relative;
+}
+
+#pcrmachine{
+    position: relative;
+    width:25%;
+    top:1%;
+    left:5%;
+}
+
+#pcrmachinecover{
+    position: absolute;
+    width:30%;
+    top:10%;
+    left:10%;
+   
+    
+    /*transition: transform 2s ease-in-out;*/
+ 
+}
+
+
+.door
+{
+  background-color: transparent;
+  display:block;
+  width:70%;
+  height:130%;
+  
+  /*Speed of the Door animation*/
+  transition: all 0.7s ease-in-out;
+}
+.door1{
+    
+  transform-style: preserve-3d;
+  transition: transform 2s, box-shadow .5s;
+  transform-origin: left center; 
+  
+
+}
+
+
+  
+  .doorOpen1
+  {
+    transform: perspective(800px) rotateX(-105deg);
+    
+  }
+  
+
+
+#cellplate{
+    position: absolute;
+    width:10%;
+    top:18%;
+    left:12%; 
+   
+}
+
+#tubecover{
+    position: absolute;
+    width:1.5%;
+    top:29.4%;
+    left:15.5%;
+   
+}
+
+#tube{
+    position: absolute;
+    width:4%;
+    top:17%;
+    left:39%;  
+   
+}
+
+#tube1{
+    position: absolute;
+    width:1.2%;
+    top:9%;
+    left:46.2%;  
+    z-index: 10;
+   
+}
+#tube2{
+    position: absolute;
+    width:1.2%;
+    top:9%;
+    left:47.6%;  
+    z-index: 10;
+   
+}
+
+#tube3{
+    position: absolute;
+    width:1.2%;
+    top:10%;
+    left:48.9%;  
+    z-index: 10;
+   
+}
+#tube4{
+    position: absolute;
+    width:1.2%;
+    top:8%;
+    left:50.2%;  
+    z-index: 10;
+   
+}
+#tube5{
+    position: absolute;
+    width:1.2%;
+    top:10%;
+    left:51.5%;  
+    z-index: 10;
+   
+}
+
+#tube6{
+    position: absolute;
+    width:1.2%;
+    top:9%;
+    left:53%;  
+    z-index: 10;
+   
+}
+
+#icebucket{
+    position: absolute;
+    width:17%;
+    top:5.6%;
+    left:41.8%;  
+   
+}
+
+#thermo{
+    position: absolute;
+    width:5%;
+    top:5.6%;
+    left:38%;  
+}
+
+
+#thermometer{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
+    left:40.1%; 
+    display: none; 
+}
+
+#thermometer1{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
+    left:40.1%;  
+    display: none;
+}
+
+#thermometer2{
+    position: absolute;
+    width:0.8%;
+    height:29%;
+    top:13.2%;
+    left:40.1%;  
+    display: none;
+}
+
+#thermometerborder{
+    position: absolute;
+    width:4.8%;
+    height:40.3%;
+    top:6.1%;
+    left:38.2%;  
+}
+
+#ice{
+    position: absolute;
+    width:10%;
+    top:16%;
+    left:45%;  
+    z-index: 10;
+   
+}
+
+
+#back{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:6.5%; 
+}
+
+#inst{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:13%; 
+}
+
+#del{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:19.2%; 
+}
+
+#option{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:25.3%; 
+}
+
+#save{
+    position: absolute;
+    width:6.5%;
+    height:4%;
+    top:86%;
+    left:32%; 
+}
+
+#run{
+    position: absolute;
+    width:3.2%;
+    height:4%;
+    top:86.2%;
+    left:21.2%; 
+    background-color: transparent;
+}
+
+#dnastrandsa{
+    position: absolute;
+    width:30%;
+    top:31%; /* 31 -20*/
+    left:60.1%;
+}
+
+#dnastrandsb{
+    position: absolute;
+    width:30%;
+    top:36%; /* 36-50 */
+    left:60.6%;
+   
+    
+}
+
+
+ 
+#dnaprimerb{ /*  up -reverse primer  */
+    position: absolute;
+    width:30%;
+    top:36%; /* 36 -24*/
+    left:68.1%;
+   
+    
+}
+
+#dnaprimer{ /*  down -forward primer  */
+    position: absolute;
+    width:30%;
+    top:40%; /* 40-46 */
+    left:52.8%;
+   
+    
+}
+
+#taqpoly{
+    position: absolute;
+    width:2.5%;
+    top:26%; /*25.5 */
+    left:78%;
+}
+
+#taqpolyr{
+    position: absolute;
+    width:2.5%;
+    top:44%; /* 45.3 */
+    left:71%;
+    rotate: 180deg;
+}
+
+
+/* #cycle1dna{
+    position: absolute;
+    width:30%;
+    top:20%; 
+    left:60.1%;
+} */
+
+/* Cycle 2*/
+
+#dnastrandsac21{
+    position: absolute;
+    width:30%;
+    top:20%; /* 20-8 */
+    left:60.1%;
+}
+
+#dnastrandsbc21{
+    position: absolute;
+    width:30%;
+    top:24.2%; /* 24 */
+    left:60.6%;
+}
+
+
+#dnastrandsac22{
+    position: absolute;
+    width:30%;
+    top:45.8%; /* 46 */
+    left:60.1%;
+}
+
+#dnastrandsbc22{
+    position: absolute;
+    width:30%;
+    top:50%; /* 50-70 */
+    left:60.6%;
+}
+
+#dnaprimerc2f1{ /*forward down dna */
+    position: absolute;
+    width:30%;
+    top:18%; /* 18-20*/
+    left:52.8%;
+}
+#dnaprimerbc2r1{  /*reverse  up dna*/
+    position: absolute;
+    width:30%;
+    top:15%; /* 15- 12*/
+    left:68.1%;
+}
+
+#dnaprimerc2f2{ /*forward  down dna*/
+    position: absolute;
+    width:30%;
+    top:58%; /* 58-66*/
+    left:52.8%;
+}
+#dnaprimerbc2r2{ /*reverse  up dna*/
+    position: absolute;
+    width:30%;
+    top:55%; /* 55-50 */
+    left:68.1%;
+}
+
+
+#taqpolyc21{
+    position: absolute;
+    width:2.5%;
+    top:14%; /*14 */
+    left:78%;
+}
+
+#taqpolyc21r{
+    position: absolute;
+    width:2.5%;
+    top:18%; /* 18.3 */
+    left:71%;
+    rotate: 180deg;
+}
+
+
+#taqpolyc22{
+    position: absolute;
+    width:2.5%;
+    top:52%; /*51 */
+    left:78%;
+}
+
+#taqpolyc22r{
+    position: absolute;
+    width:2.5%;
+    top:64%; /* 65 */
+    left:71%;
+    rotate: 180deg;
+}
+
+/* Cycle 3*/
+
+#dnastrandsac31{
+    position: absolute;
+    width:30%;
+    top:8%; /* 8 */
+    left:60.1%;
+}
+
+#dnastrandsbc31{
+    position: absolute;
+    width:30%;
+    top:12.2%; /* 12 */
+    left:60.6%;
+}
+
+
+#dnastrandsac32{
+    position: absolute;
+    width:30%;
+    top:20%; /* 21 */
+    left:60.1%;
+}
+
+#dnastrandsbc32{
+    position: absolute;
+    width:30%;
+    top:24.2%; /* 24.2*/
+    left:60.6%;
+}
+
+#dnastrandsac31t{
+    position: absolute;
+    width:30%;
+    top:46%; /* 46.5 */
+    left:60.1%;
+}
+
+#dnastrandsbc31b{
+    position: absolute;
+    width:30%;
+    top:50%; /* 50 */
+    left:60.6%;
+}
+
+
+#dnastrandsac32t{
+    position: absolute;
+    width:30%;
+    top:66%; /* 67 */
+    left:60.1%;
+}
+
+#dnastrandsbc32b{
+    position: absolute;
+    width:30%;
+    top:70%; /* 70 */
+    left:60.6%;
+}
+
+
+
+/*  Thermal machine highlighting*/
+#den3min{
+    position: absolute;
+    width:2.5%;
+    height:21.1%;
+    top:62.4%;
+    left:5.9%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#ann2min{
+    position: absolute;
+    width:2.8%;
+    height:21.1%;
+    top:62.4%;
+    left:11%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#ext1min{
+    position: absolute;
+    width:2.8%;
+    height:21.1%;
+    top:62.4%;
+    left:13.8%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#den2min{
+    position: absolute;
+    width:2.6%;
+    height:21.1%;
+    top:62.4%;
+    left:8.4%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+
+#goto2{
+    position: absolute;
+    width:2.6%;
+    height:21.1%;
+    top:62.4%;
+    left:16.7%; 
+    background-color: transparent;
+    transform: rotate(2deg);
+}
+
+#c3{
+    position: absolute;
+    width:30%;
+    top:10%; /* 10 */
+    left:61.1%;
+}
+
+#message{
+    position: absolute;
+    width:30%;
+    height:20%;
+    top:80%; /* 27 */
+    left:61.1%;
+}
