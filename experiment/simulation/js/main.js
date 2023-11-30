@@ -64,7 +64,7 @@ function thawcomp() {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     //document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     //document.getElementById("opt1").disabled = false;
-    document.getElementById("thaw").innerHTML = "PCR reaction component that has been added in the ice bucket";
+    document.getElementById("thaw").innerHTML = "PCR reaction component that has been added in the ice bucket is(are)";
     document.getElementById("tube1").style.display = "block";
     document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
@@ -296,6 +296,8 @@ function runpcr() {
   document.getElementById("dnastrandsb").style.display = "block";
   document.getElementById("run").style.display = "none";
   document.getElementById("pcrobjlist").style.display = "none";
+  document.getElementById("step3").disabled = true;
+  document.getElementById("opentc").disabled = true;
   //document.getElementById("stepshead").innerHTML = "1. Denaturation";
   document.getElementById("pcrstp1").style.display = "block";
   document.getElementById("den3min").style.background = "#ADFFF5 ";
