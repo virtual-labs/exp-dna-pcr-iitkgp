@@ -47,7 +47,7 @@ function thawcomp() {
   }
   if (isInserted) {
     $('#alertModal').modal('show');
-    $('.modal-body').text('You have already entered the reaction component of PCR.');
+    $('.modal-body').text('You have already entered the component of PCR reaction.');
    
    
     
@@ -64,7 +64,7 @@ function thawcomp() {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     //document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     //document.getElementById("opt1").disabled = false;
-    document.getElementById("thaw").innerHTML = "PCR reaction component(s) that has been added in the ice bucket is(are)";
+    document.getElementById("thaw").innerHTML = "The component(s) of the PCR reaction that have been added to the ice bucket is/are";
     document.getElementById("tube1").style.display = "block";
     document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
