@@ -17,8 +17,44 @@ function restartexp() {
 }
 
 var thawcomponents = document.getElementById("step1");
+
 function thawcomp() {
+  pcrobj = thawcomponents.options[thawcomponents.selectedIndex].text;
+  newLi = document.createElement("li");
+  newLi.setAttribute("data-value", pcrobj);
+  newdiv = document.createElement("div");
+  newdiv.setAttribute("class", "form-check");
+  let newCheckLabel = document.createElement('LABEL');
+  newCheckLabel.setAttribute("class", "form-check-label");
+  let labelTextNode = document.createTextNode(pcrobj);
+  newCheckLabel.appendChild(labelTextNode);
+  newdiv.appendChild(newCheckLabel);
+ 
+  newLi.appendChild(newdiv);
+  let isInserted = false;
+  const myListn = document.getElementById("pcrobjlist");
+  const listItemsn = myListn.getElementsByTagName("li");
+
   document.getElementById("step2").disabled = false;
+
+
+  for (let i = 0; i < listItemsn.length; i++) {
+    if ((listItemsn[i].textContent == pcrobj) ) {
+      isInserted = true;
+      break;
+    }
+   
+  }
+  if (isInserted) {
+    $('#alertModal').modal('show');
+    $('.modal-body').text('You have already entered PCR component by the same name.');
+   
+   
+    
+  } 
+
+  else{
+
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 0) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
     document.getElementById("thaw").innerHTML = "The components of the PCR reaction that are thawed and centrifuged:  ";
@@ -26,60 +62,76 @@ function thawcomp() {
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 1) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    //document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     //document.getElementById("opt1").disabled = false;
+    document.getElementById("thaw").innerHTML = "PCR reaction component that has been added in the ice bucket";
     document.getElementById("tube1").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 2) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+   // document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     //document.getElementById("opt2").disabled = false;
     document.getElementById("tube2").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 3) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+  //  document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     // document.getElementById("opt3").disabled = false;
     document.getElementById("tube3").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 4) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    //document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     //document.getElementById("opt6").disabled = false;
     document.getElementById("tube6").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 5) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+   // document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     // document.getElementById("opt4").disabled = false;
     document.getElementById("tube4").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
   if (thawcomponents.options[thawcomponents.selectedIndex].value == 6) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
+    //document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " has been added in the ice bucket";
     // document.getElementById("opt5").disabled = false;
     document.getElementById("tube5").style.display = "block";
+    document.getElementById('pcrobjlist').appendChild(newLi);
     window.scrollBy(0,500);
   }
 
   if ((thawcomponents.options[thawcomponents.selectedIndex].value == 7) || (thawcomponents.options[thawcomponents.selectedIndex].value == 8)) {
     document.getElementById("actionhead").innerHTML = "Action: Thawing the PCR reaction components on ice";
-    document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " is not a correct component";
+    $('#alertModal').modal('show');
+    $('.modal-body').text(thawcomponents.options[thawcomponents.selectedIndex].text + " is not a correct component");
+   // document.getElementById("thaw").innerHTML = thawcomponents.options[thawcomponents.selectedIndex].text + " is not a correct component";
   }
 }
+}
 
+
+function cancelmsg() {
+  document.getElementById("alertModal").style.display = "none";
+  document.getElementById("alertModal").classList.remove("show");
+}
 
 function prepmix() {
   //if ((document.getElementById('opt1').checked) && (document.getElementById('opt2').checked) && (document.getElementById('opt3').checked) && (document.getElementById('opt4').checked) && (document.getElementById('opt5').checked) && (document.getElementById('opt6').checked)) {
   // alert("correct");
   document.getElementById("tube").style.display = "block";
   document.getElementById("step2").disabled = true;
-  document.getElementById("thaw").innerHTML = "";
+  document.getElementById("thaw").style.display = "none";
+  //document.getElementById("pcrobjlist").style.display = "none";
   document.getElementById("actionhead").innerHTML = "Action: Preparation of the PCR reaction mix";
   document.getElementById("prep").innerHTML = "The components required for PCR as mentioned above are assembled in a tube and mixed and centrifuged";
   tubeimg = document.getElementById('tube');
@@ -243,6 +295,7 @@ function runpcr() {
   document.getElementById("dnastrandsa").style.display = "block";
   document.getElementById("dnastrandsb").style.display = "block";
   document.getElementById("run").style.display = "none";
+  document.getElementById("pcrobjlist").style.display = "none";
   //document.getElementById("stepshead").innerHTML = "1. Denaturation";
   document.getElementById("pcrstp1").style.display = "block";
   document.getElementById("den3min").style.background = "#ADFFF5 ";
