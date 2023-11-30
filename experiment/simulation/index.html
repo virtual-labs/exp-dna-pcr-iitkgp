@@ -194,7 +194,11 @@ Developer: Prakriti Dhang
 				<div class="card">
 					<div class="card-header fs-5 fw-bold" id="actionhead">Actions</div>
 					<div class="card-body">
-						<p id="thaw" class="fs-6"> </p>
+						<p id="thaw" class="fs-6"> 
+							
+							<ul id="pcrobjlist">
+          
+						</ul></p>
 						<p id="prep" class="fs-6"> </p>
 
 						<p class="fs-5 fw-bold card-text" id="cyclenum"></p>
@@ -446,6 +450,27 @@ Developer: Prakriti Dhang
 						<div class="modal-footer">
 
 							<button type="button" class="btn btn-warning" onclick="start()"
+								data-bs-dismiss="modal">OK</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="modal" id="alertModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Alert message</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<p></p>
+						</div>
+						<div class="modal-footer">
+
+							<button type="button" class="btn btn-warning" onclick="cancelmsg()"
 								data-bs-dismiss="modal">OK</button>
 						</div>
 					</div>
