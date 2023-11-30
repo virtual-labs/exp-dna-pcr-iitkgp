@@ -168,6 +168,7 @@ function PCRincub() {
   document.getElementById("actionhead").innerHTML = "Action: Incubation of the PCR reaction mixture in a thermal cycler";
   // document.getElementById("cyclenum").innerHTML = "Cycle 1";
   document.getElementById("opentc").style.display = "block";
+  document.getElementById("pcrobjlist").style.display = "none";
   //document.getElementById("step3").disabled=true;
 }
 
