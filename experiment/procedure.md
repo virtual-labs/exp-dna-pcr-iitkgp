@@ -30,11 +30,11 @@ where “X” is the number of  target DNA  at cycle one, “n” is the number 
 
 
 ## Simulation Layout
-
-<div align="center"><img src="images/lsimulationsetup.png"  class="img-fluid" >
+<div align="center">
+<img src="images/lsimulationsetup.png"  class="img-fluid">
 <p>Fig 1: Simulation layout 1</p>
 </div>
-
+ <br>
 
 <div align="center"><img src="images/lsimulationsetup2.png"  class="img-fluid" >
 <p>Fig 2: Simulation layout 2</p>
