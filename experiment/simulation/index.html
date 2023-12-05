@@ -271,7 +271,7 @@ Developer: Prakriti Dhang
 								style="display: block;" alt="Thermal cycle top">
 						</div>
 						<img class="img-fluid" id="tube" src="images/tube.png" style="cursor: pointer; display: none; "
-							alt="PCR tube">
+							alt="PCR tube" data-toggle="tooltip" data-placement="bottom" title="PCR mixture">
 							
 
 						<img class="img-fluid" id="tube1" src="images/primers.png"
@@ -288,13 +288,13 @@ Developer: Prakriti Dhang
 							style="cursor: pointer; display: none; " alt="PCR tube6">
 
 						<img class="img-fluid" id="icebucket" src="images/ice_bucket.png"
-							style="cursor: pointer; display: block; " alt="icebucket">
+							style="cursor: pointer; display: block; " alt="icebucket" data-toggle="tooltip" data-placement="bottom" title="Ice bucket">
 
 							<img class="img-fluid" id="thermo" src="images/thermo.png"
-							style="cursor: pointer; display: none; " alt="thermometer">
+							style="cursor: pointer; display: none; " alt="thermometer" data-toggle="tooltip" data-placement="bottom" title="Thermometer">
 
 							<canvas id="thermometer"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas>
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; " ></canvas>
 
 							<canvas id="thermometer1"
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
@@ -303,7 +303,7 @@ Developer: Prakriti Dhang
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
 
 							<canvas id="thermometerborder"
-							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;"></canvas>
+							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;" data-toggle="tooltip" data-placement="bottom" title="Thermometer"></canvas>
 
 
 
@@ -488,7 +488,15 @@ Developer: Prakriti Dhang
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="./js/main.js"></script>
 	<script>
-		
+		$(function () {
+  $('[data-toggle="tooltip"]').tooltip(
+
+  {
+	placement: 'bottom'
+  }
+  );
+  
+})
 
 	</script>
 </body>
