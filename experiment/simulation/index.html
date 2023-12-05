@@ -62,15 +62,16 @@ Developer: Prakriti Dhang
 						<ol>
 							<li>Click on "Start the Experiment" button.
 							</li>
-							<li>In step 1, select components from the dropdown button "Choose the PCR reaction components for thawing on
+							<li>In step 1, select components from the dropdown button "Choose the PCR reaction
+								components for thawing on
 								ice"</li>
 							<li>In step 2, click on "Preparation of PCR mixture"
 								button.
 							</li>
 							<li>In step 3, click on "Incubation of the PCR reaction mixture in a thermal
 								cycler" button. Then click on "Open" button to open the thermal cycler. To placed the
-								tube in the cell plate, click on the tube. After tube is placed in the cell plate, click
-								on "Close" button to close the thermal cycler.</li>
+								PCR mixture in the cell plate, click on the PCR mixture tube.</li>
+							<li>Click on "Close" button to close the thermal cycler, after PCR mixture tube is placed in the cell plate</li>
 							<li> Click on "Run" button of Thermal Cycler for PCR amplification. The schematic
 								representaion of PCR
 								amplification will be appear on right side.</li>
@@ -94,9 +95,10 @@ Developer: Prakriti Dhang
 										style="cursor: pointer; " data-bs-toggle="modal"
 										data-bs-target="#exampleModal">Start the Experiment</button>
 
-										<button id="steprs" type="button"
+									<button id="steprs" type="button"
 										class="btn btn-warning border border-1  rounded-3 fs-6 m-2"
-										style="cursor: pointer; float:right "  onclick="restartexp()">Re-Do the Experiment</button>
+										style="cursor: pointer; float:right " onclick="restartexp()">Re-Do the
+										Experiment</button>
 								</td>
 							</tr>
 							<tr>
@@ -163,7 +165,8 @@ Developer: Prakriti Dhang
 							<tr>
 								<td><button id="step2" type="button"
 										class="btn btn-warning border border-2 border-success rounded-3 fs-6"
-										onclick="prepmix()" style="cursor: pointer;" disabled>Preparation of PCR mixture</button>
+										onclick="prepmix()" style="cursor: pointer;" disabled>Preparation of PCR
+										mixture</button>
 								</td>
 							</tr>
 
@@ -194,11 +197,12 @@ Developer: Prakriti Dhang
 				<div class="card">
 					<div class="card-header fs-5 fw-bold" id="actionhead">Actions</div>
 					<div class="card-body">
-						<p id="thaw" class="fs-6"> 
-							
-							<ul id="pcrobjlist">
-          
-						</ul></p>
+						<p id="thaw" class="fs-6">
+
+						<ul id="pcrobjlist">
+
+						</ul>
+						</p>
 						<p id="prep" class="fs-6"> </p>
 
 						<p class="fs-5 fw-bold card-text" id="cyclenum"></p>
@@ -213,7 +217,7 @@ Developer: Prakriti Dhang
 							<button id="pcrstp3" type="button" class="btn btn-warning  rounded-2 fs-6 mb-2"
 								style="cursor: pointer; display:none;"> Extension</button>
 						</div>
-						
+
 					</div>
 
 				</div>
@@ -260,19 +264,19 @@ Developer: Prakriti Dhang
 			<div class="col-md-12">
 				<div class="card card-body border-0">
 					<div class="img-container">
-						<img class="img-fluid" id="pcrmachine" src="images/pcr-machine.png" alt="thermal-cycler">
+						<img class="img-fluid" id="pcrmachine" src="images/pcr-machine.png" alt="thermal-cycler" data-toggle="tooltip" data-placement="bottom" title="Thermal cycler">
 
-						<img class="img-fluid" id="cellplate" src="images/cells-plate.png" alt="Cell plate">
-						<img class="img-fluid" id="tubecover" src="images/tubecover.png" style="cursor: pointer; display:none; "
-							alt="PCR tubecover">
+						<img class="img-fluid" id="cellplate" src="images/cells-plate.png" alt="Cell plate" data-toggle="tooltip" data-placement="bottom" title="Cell plate">
+						<img class="img-fluid" id="tubecover" src="images/tubecover.png"
+							style="cursor: pointer; display:none; " alt="PCR tubecover">
 						<div class="door door1 " style="float:left">
-						
+
 							<img class="img-fluid " id="pcrmachinecover" src="images/topscreen.png"
 								style="display: block;" alt="Thermal cycle top">
 						</div>
 						<img class="img-fluid" id="tube" src="images/tube.png" style="cursor: pointer; display: none; "
-							alt="PCR tube" data-toggle="tooltip" data-placement="bottom" title="PCR mixture">
-							
+							alt="PCR tube" data-toggle="tooltip" data-placement="bottom" title="PCR mixture tube">
+
 
 						<img class="img-fluid" id="tube1" src="images/primers.png"
 							style="cursor: pointer; display: none; " alt="PCR tube1">
@@ -288,22 +292,25 @@ Developer: Prakriti Dhang
 							style="cursor: pointer; display: none; " alt="PCR tube6">
 
 						<img class="img-fluid" id="icebucket" src="images/ice_bucket.png"
-							style="cursor: pointer; display: block; " alt="icebucket" data-toggle="tooltip" data-placement="bottom" title="Ice bucket">
+							style="cursor: pointer; display: block; " alt="icebucket" data-toggle="tooltip"
+							data-placement="bottom" title="Ice bucket">
 
-							<img class="img-fluid" id="thermo" src="images/thermo.png"
-							style="cursor: pointer; display: none; " alt="thermometer" data-toggle="tooltip" data-placement="bottom" title="Thermometer">
+						<img class="img-fluid" id="thermo" src="images/thermo.png"
+							style="cursor: pointer; display: none; " alt="thermometer" data-toggle="tooltip"
+							data-placement="bottom" title="Thermometer">
 
-							<canvas id="thermometer"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; " ></canvas>
+						<canvas id="thermometer"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas>
 
-							<canvas id="thermometer1"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
+						<canvas id="thermometer1"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas>
 
-							<canvas id="thermometer2"
-							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas> 
+						<canvas id="thermometer2"
+							style="border:0px solid #000000; border-radius: 5px; cursor: pointer; "></canvas>
 
-							<canvas id="thermometerborder"
-							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;" data-toggle="tooltip" data-placement="bottom" title="Thermometer"></canvas>
+						<canvas id="thermometerborder"
+							style="border:2px solid #000000; border-radius: 12px; cursor: pointer; display: none;"
+							data-toggle="tooltip" data-placement="bottom" title="Thermometer"></canvas>
 
 
 
@@ -337,75 +344,75 @@ Developer: Prakriti Dhang
 						<img class="img-fluid" id="dnaprimerb" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
-							<img class="img-fluid" id="taqpoly" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpoly" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpoly">
 
-							<img class="img-fluid" id="taqpolyr" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpolyr" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpolyr">
 
-							<!--img class="img-fluid" id="cycle1dna" src="images/DNA_strands_formed_after_cycle_1_of_PCR.png" style="display:none;"
+						<!--img class="img-fluid" id="cycle1dna" src="images/DNA_strands_formed_after_cycle_1_of_PCR.png" style="display:none;"
 							alt="cycle1"-->
 
-							<img class="img-fluid" id="dnastrandsac21" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac21" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc21" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac22" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac22" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc22" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
 
-							<img class="img-fluid" id="dnaprimerc2f1" src="images/Forward_pri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerc2f1" src="images/Forward_pri.png" style="display:none;"
 							alt="dnaprimer">
 						<img class="img-fluid" id="dnaprimerbc2r1" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
-							<img class="img-fluid" id="dnaprimerc2f2" src="images/Forward_pri.png" style="display:none;"
+						<img class="img-fluid" id="dnaprimerc2f2" src="images/Forward_pri.png" style="display:none;"
 							alt="dnaprimer">
 						<img class="img-fluid" id="dnaprimerbc2r2" src="images/Reverse_primer.png" style="display:none;"
 							alt="dnaprimerb">
 
 
-							<img class="img-fluid" id="taqpolyc21" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpolyc21" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpoly">
 
-							<img class="img-fluid" id="taqpolyc21r" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpolyc21r" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpolyr">
 
 
 
-							<img class="img-fluid" id="taqpolyc22" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpolyc22" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpoly">
 
-							<img class="img-fluid" id="taqpolyc22r" src="images/Taq_polymerase.png" style="display:none;"
+						<img class="img-fluid" id="taqpolyc22r" src="images/Taq_polymerase.png" style="display:none;"
 							alt="taqpolyr">
 
 
 
-							<!-- Cycle 3-->
+						<!-- Cycle 3-->
 
-							<img class="img-fluid" id="dnastrandsac31" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac31" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc31" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac32" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac32" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc32" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac31t" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac31t" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc31b" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
 
-							<img class="img-fluid" id="dnastrandsac32t" src="images/Top_strand.png" style="display:none;"
+						<img class="img-fluid" id="dnastrandsac32t" src="images/Top_strand.png" style="display:none;"
 							alt="dnastrands">
 						<img class="img-fluid" id="dnastrandsbc32b" src="images/Bottom_strand.png" style="display:none;"
 							alt="dnastrands">
-						
+
 
 						<canvas id="den3min"
 							style="border:0px solid #000000; border-radius: 5px; cursor: pointer;"></canvas>
@@ -489,14 +496,14 @@ Developer: Prakriti Dhang
 	<script src="./js/main.js"></script>
 	<script>
 		$(function () {
-  $('[data-toggle="tooltip"]').tooltip(
+			$('[data-toggle="tooltip"]').tooltip(
 
-  {
-	placement: 'bottom'
-  }
-  );
-  
-})
+				{
+					placement: 'bottom'
+				}
+			);
+
+		})
 
 	</script>
 </body>
