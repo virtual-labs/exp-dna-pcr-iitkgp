@@ -30,14 +30,14 @@ where “X” is the number of  target DNA  at cycle one, “n” is the number 
 
 
 ## Simulation Instrument Setup
+
 1. **Thawing the PCR reaction components on ice and Preparation of the PCR reaction mix**
+
 <div align="center">
 <img src="images/lsimulationsetup.png"  class="img-fluid">
-
 </div>
- <br>
-
+ 
 2. **Incubation of the PCR reaction mixture in a thermal cycler**
-<div align="center"><img src="images/lsimulationsetup2.png"  class="img-fluid" >
 
+<div align="center"><img src="images/lsimulationsetup2.png"  class="img-fluid" >
 </div>
