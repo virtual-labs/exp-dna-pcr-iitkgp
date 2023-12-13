@@ -1,0 +1,79 @@
+
+/home/runner/work/exp-dna-pcr-iitkgp/exp-dna-pcr-iitkgp/experiment/simulation/js/main.js
+    9:10  warning  'start' is defined but never used             no-unused-vars
+   15:10  warning  'restartexp' is defined but never used        no-unused-vars
+   21:10  warning  'thawcomp' is defined but never used          no-unused-vars
+   22:3   warning  'pcrobj' is not defined                       no-undef
+   23:3   warning  'newLi' is not defined                        no-undef
+   24:3   warning  'newLi' is not defined                        no-undef
+   24:36  warning  'pcrobj' is not defined                       no-undef
+   25:3   warning  'newdiv' is not defined                       no-undef
+   26:3   warning  'newdiv' is not defined                       no-undef
+   29:47  warning  'pcrobj' is not defined                       no-undef
+   31:3   warning  'newdiv' is not defined                       no-undef
+   33:3   warning  'newLi' is not defined                        no-undef
+   33:21  warning  'newdiv' is not defined                       no-undef
+   42:39  warning  'pcrobj' is not defined                       no-undef
+   49:5   warning  '$' is not defined                            no-undef
+   50:5   warning  '$' is not defined                            no-undef
+   69:55  warning  'newLi' is not defined                        no-undef
+   77:55  warning  'newLi' is not defined                        no-undef
+   85:55  warning  'newLi' is not defined                        no-undef
+   93:55  warning  'newLi' is not defined                        no-undef
+  101:55  warning  'newLi' is not defined                        no-undef
+  109:55  warning  'newLi' is not defined                        no-undef
+  115:5   warning  '$' is not defined                            no-undef
+  116:5   warning  '$' is not defined                            no-undef
+  123:10  warning  'cancelmsg' is defined but never used         no-unused-vars
+  128:10  warning  'prepmix' is defined but never used           no-unused-vars
+  166:10  warning  'PCRincub' is defined but never used          no-unused-vars
+  272:10  warning  'openthermalcycle' is defined but never used  no-unused-vars
+  295:10  warning  'runpcr' is defined but never used            no-unused-vars
+  757:3   warning  'canvas' is not defined                       no-undef
+  758:3   warning  'ctx' is not defined                          no-undef
+  758:9   warning  'canvas' is not defined                       no-undef
+  764:5   warning  'ctx' is not defined                          no-undef
+  765:5   warning  'ctx' is not defined                          no-undef
+  766:5   warning  'ctx' is not defined                          no-undef
+  767:5   warning  'ctx' is not defined                          no-undef
+  768:5   warning  'ctx' is not defined                          no-undef
+  769:5   warning  'ctx' is not defined                          no-undef
+  775:28  warning  'canvas' is not defined                       no-undef
+  786:5   warning  'cancelani' is not defined                    no-undef
+  795:3   warning  'canvas' is not defined                       no-undef
+  796:3   warning  'ctx' is not defined                          no-undef
+  796:9   warning  'canvas' is not defined                       no-undef
+  801:5   warning  'ctx' is not defined                          no-undef
+  801:25  warning  'canvas' is not defined                       no-undef
+  802:5   warning  'ctx' is not defined                          no-undef
+  803:5   warning  'ctx' is not defined                          no-undef
+  804:5   warning  'ctx' is not defined                          no-undef
+  806:5   warning  'ctx' is not defined                          no-undef
+  807:5   warning  'ctx' is not defined                          no-undef
+  813:28  warning  'canvas' is not defined                       no-undef
+  824:5   warning  'cancelani' is not defined                    no-undef
+  831:3   warning  'canvas' is not defined                       no-undef
+  832:3   warning  'ctx' is not defined                          no-undef
+  832:9   warning  'canvas' is not defined                       no-undef
+  838:5   warning  'ctx' is not defined                          no-undef
+  839:5   warning  'ctx' is not defined                          no-undef
+  840:5   warning  'ctx' is not defined                          no-undef
+  841:5   warning  'ctx' is not defined                          no-undef
+  842:5   warning  'ctx' is not defined                          no-undef
+  843:5   warning  'ctx' is not defined                          no-undef
+  860:5   warning  'cancelani' is not defined                    no-undef
+  867:3   warning  'canvas' is not defined                       no-undef
+  868:3   warning  'ctx' is not defined                          no-undef
+  868:9   warning  'canvas' is not defined                       no-undef
+  874:5   warning  'ctx' is not defined                          no-undef
+  875:5   warning  'ctx' is not defined                          no-undef
+  876:5   warning  'ctx' is not defined                          no-undef
+  877:5   warning  'ctx' is not defined                          no-undef
+  878:5   warning  'ctx' is not defined                          no-undef
+  879:5   warning  'ctx' is not defined                          no-undef
+  896:5   warning  'cancelani' is not defined                    no-undef
+  933:5   warning  'cancelani' is not defined                    no-undef
+  969:5   warning  'cancelani' is not defined                    no-undef
+
+✖ 74 problems (0 errors, 74 warnings)
+
