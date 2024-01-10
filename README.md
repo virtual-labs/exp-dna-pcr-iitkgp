@@ -31,9 +31,8 @@ PCR is a technique utilized to make multiple copies of a specific DNA sequence i
 <b> Department |  School of Bioscience
 
 ### Contributors List
-
-SrNo | Name  |Designation| Department| Institute| 
-:--|:--|:--|:--|:--|
-1 | **Prakriti Dhang** |  Developer and Integration Engineer| Department of Mechanical Engineering | IIT Kharagpur |
-2 | **Namrata Ganguli** | Research Scholar | School of Bioscience | IIT Kharagpur |
+SrNo | Name | Vlabs Developer or Integration Engineer| Designation | Department| Institute| 
+:--|:--|:--|:--|:--|:--|
+1 | **Prakriti Dhang** | Developer and Integration Engineer | Project Scientist | Department of Mechanical Engineering | IIT Kharagpur |
+2 | **Namrata Ganguli** | | Research Scholar | School of Bioscience | IIT Kharagpur |
 
