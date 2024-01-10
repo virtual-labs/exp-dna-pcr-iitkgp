@@ -524,3 +524,20 @@ Developer: Prakriti Dhang
     top:80%; /* 27 */
     left:61.1%;
 }
+
+.btn-coral-peach {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #FF6F61;
+    --bs-btn-border-color: #FF6F61;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #FF4D3B;
+    --bs-btn-hover-border-color: #FF6F61;
+    --bs-btn-focus-shadow-rgb: 255, 111, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #FF6F61;
+    --bs-btn-active-border-color: #E64A3A;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #FF6F61;
+    --bs-btn-disabled-border-color: #FF6F61;
+  }
