@@ -20,6 +20,7 @@ Developer: Prakriti Dhang
     width:25%;
     top:1%;
     left:5%;
+    cursor: pointer;
 }
 
 #pcrmachinecover{
@@ -27,6 +28,7 @@ Developer: Prakriti Dhang
     width:30%;
     top:10%;
     left:10%;
+    cursor: pointer;
    
     
     /*transition: transform 2s ease-in-out;*/
@@ -67,7 +69,8 @@ Developer: Prakriti Dhang
     position: absolute;
     width:10%;
     top:18%;
-    left:12%; 
+    left:12%;
+    cursor: pointer;
    
 }
 
@@ -143,6 +146,7 @@ Developer: Prakriti Dhang
     width:17%;
     top:5.6%;
     left:41.8%;  
+    cursor: pointer;
    
 }
 
@@ -246,6 +250,7 @@ Developer: Prakriti Dhang
     top:86.2%;
     left:21.2%; 
     background-color: transparent;
+    cursor: pointer;
 }
 
 #dnastrandsa{
