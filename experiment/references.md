@@ -11,9 +11,9 @@
 - Zhu, H., Zhang, H., Xu, Y., Laššáková, S., Korabečná, M., & Neužil, P. (2020). PCR past, present and future. BioTechniques, 69(4), 317–325. [https://doi.org/10.2144/btn-2020-0057](https://doi.org/10.2144/btn-2020-0057)
 
 3. **Web Resources**
-- PCR Mechanism [https://www.labxchange.org/library/items/lb:LabXchange:f7f6962a:lx_simulation:1](https://www.labxchange.org/library/items/lb:LabXchange:f7f6962a:lx_simulation:1)
-- Application of PCR [https://www.labxchange.org/library/items/lb:LabXchange:bc4846e2:lx_simulation:1](https://www.labxchange.org/library/items/lb:LabXchange:bc4846e2:lx_simulation:1)
+- [PCR Mechanism](https://www.labxchange.org/library/items/lb:LabXchange:f7f6962a:lx_simulation:1)
+- [Application of PCR](https://www.labxchange.org/library/items/lb:LabXchange:bc4846e2:lx_simulation:1)
 - NPTEL Analytical Technologies in Biotechnology
-  - Polymerase chain reaction [https://www.youtube.com/watch?v=CgXtJ4ooaUU](https://www.youtube.com/watch?v=CgXtJ4ooaUU)
-  - DNA sequencing methods [https://www.youtube.com/watch?v=etpSw6xfLmM](https://www.youtube.com/watch?v=etpSw6xfLmM)
-  - Enzyme linked immunosorbent assay (ELISA) [https://www.youtube.com/watch?v=fzMXboYnp5s&t=5s](https://www.youtube.com/watch?v=fzMXboYnp5s&t=5s)
+  - [Polymerase chain reaction](https://www.youtube.com/watch?v=CgXtJ4ooaUU)
+  - [DNA sequencing methods](https://www.youtube.com/watch?v=etpSw6xfLmM)
+  - [Enzyme linked immunosorbent assay (ELISA)](https://www.youtube.com/watch?v=fzMXboYnp5s&t=5s)
