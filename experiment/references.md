@@ -15,5 +15,4 @@
 - [Application of PCR](https://www.labxchange.org/library/items/lb:LabXchange:bc4846e2:lx_simulation:1)
 - NPTEL Analytical Technologies in Biotechnology
   - [Polymerase chain reaction](https://www.youtube.com/watch?v=CgXtJ4ooaUU)
-  - [DNA sequencing methods](https://www.youtube.com/watch?v=etpSw6xfLmM)
-  - [Enzyme linked immunosorbent assay (ELISA)](https://www.youtube.com/watch?v=fzMXboYnp5s&t=5s)
+  
