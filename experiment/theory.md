@@ -23,3 +23,4 @@ PCR amplification takes place in a thermal cycler as shown above, which is an in
 <div><img src="images/pcr1.png" class="img-fluid" >
 <p>Schematic representation of the PCR processes that take place inside a thermal cycler.</p>
 </div>
+
